@@ -185,6 +185,46 @@ header a:hover {
     background-color: #939393;
 }
 
+.lista-grupos{
+    display: flex;
+    width: 60vw;
+    height: 400px;
+    background-color: #e7e7e7;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.grupo-lista{
+    border: 1px solid rgba(0, 0, 0, 0.426);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.texto-lista{
+    margin-left: 15px;
+}
+
+.botao-lista{
+    display: flex;
+    margin: 0 auto;
+    font-size: 1rem;
+    border: none;
+    background-color: #e7e7e7;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.botao-lista:hover{
+    background-color: #939393;
+    border-radius: 5px;
+}
+
+.lista-grupos .titulo-lista-grupos{
+    text-align: center;
+}
+
 @media (max-width: 655px) {
     .conteudo {
         box-sizing: border-box;
@@ -202,6 +242,14 @@ header a:hover {
         margin-right: 15px;
     }
 
+    .conteudo-grupo{
+        width: 100%;
+    }
+
+    .informacoes-projeto{
+        margin-right: 20px;
+    }
+
     .conteudo .imagem-conteudo {
         width: 100%;
     }
@@ -214,12 +262,6 @@ header a:hover {
     .seta-slider {
         display: none;
     }
-
-    /* .setas-mobile{
-        display: grid;
-        grid-template-columns: 1fr 1px 1fr;
-        grid-template-areas: "seta-prev separacao-setas seta-next";    
-    } */
 
     .setas-mobile {
         display: flex;
@@ -263,6 +305,17 @@ header a:hover {
         display: none;
     }
 
+    .botao-fechar{
+        display: none;
+    }
+
+    .imagem{
+        width: 100%;
+    }
+
+    .link-foto{
+        cursor: default;
+    }
 }
 
 
@@ -307,6 +360,17 @@ header a:hover {
         display: none;
     }
 
+    .botao-fechar{
+        display: none;
+    }
+
+    .imagem{
+        width: 100%;
+    }
+
+    .link-foto{
+        cursor: default;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -322,12 +386,21 @@ header a:hover {
         background-color: #e7e7e7;
         width: 40vw;
         margin: 50px;
+        display: grid;
+        grid-template-rows: auto 1fr 1px auto;
+        grid-template-areas: "topo-conteudo" "on" "conteiner-icone" "conteudo-texto";
+    }
+
+    .conteudo-texto{
+        grid-area: conteudo-texto;
     }
 
     .conteudo .topo-conteudo {
         display: flex;
         margin-left: 15px;
+        grid-area: topo-conteudo;
     }
+
 
     .conteudo .topo-conteudo .nome-grupo {
         position: absolute;
@@ -353,6 +426,7 @@ header a:hover {
 
     .conteudo-slider {
         display: grid;
+        position: relative;
         grid-template-columns: 30px 1fr 30px;
         grid-template-areas: "prev-button img next-button";
     }
@@ -366,15 +440,46 @@ header a:hover {
         display: block;
     }
 
+    .botao-fechar{
+        display: none;
+    }
+
     .foto:target{
         position: fixed;
-        width: 50%;
-        top: 15px;
-        left: 25%;
+        width: 65vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         padding: 25px 10px 10px 10px;
         border: solid 1px #333;
-        box-shadow: 0 0 25px 10px #000;
+        box-shadow: 0 0 25px 10px #00000067;
         background-color: #fff;
         border-radius: 5px;
+        z-index: 2;
+    }
+
+    .foto:target .botao-fechar{
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 3px;
+        cursor: pointer;
+    }
+
+    .foto:target .icone-aumentar{
+        display: none;
+    }
+
+    .container-icone{
+        position: relative;
+        grid-area: conteiner-icone;
+    }
+
+    .icone-aumentar{
+        position: absolute;
+        right: 35px;
+        bottom: 5px;
+        color: #fff;
+        cursor: pointer;
     }
 }

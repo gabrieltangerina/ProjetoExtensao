@@ -29,16 +29,47 @@
                 <li><a href="GrupoE.html">Grupo E</a></li>
                 <li><a href="GrupoF.html">Grupo F</a></li>
                 <li><a href="GrupoG.html">Grupo G</a></li>
-                <li><a href="GrupoH.html">Grupo H</a></li>
                 <li><a href="TodosGrupos.html">Todos os grupos</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <div class="lista-grupos">
+            <div class="grupo-lista grupoA">
+                <h3 class="titulo-lista-grupos">Grupo A</h3>
+                <p class="texto-lista">Grupo responsável pelas <strong>Palestras Lógicas para Jogos</strong>.</p>
+                <button class="botao-lista"><a href="GrupoA.html">Visitar grupo</a></button>
+            </div>
+            <div class="grupo-lista grupoB">
+                <h3 class="titulo-lista-grupos">Grupo B</h3>
+                <p class="texto-lista">Grupo responsável pelo <strong>Mini-curso de Introdução a Informática</strong>.</p>
+                <button class="botao-lista"><a href="GrupoB.html">Visitar grupo</a></button>
+            </div>
+            <div class="grupo-lista grupoC">
+                <h3 class="titulo-lista-grupos">Grupo C</h3>
+                <p class="texto-lista">Grupo responsável pelas <strong>Oficinas de Instrodução a Plataformas Virtuais</strong>.</p>
+                <button class="botao-lista"><a href="GrupoC.html">Visitar grupo</a></button>
+            </div>
+            <div class="grupo-lista grupoD">
+                <h3 class="titulo-lista-grupos">Grupo D</h3>
+                <p class="texto-lista">Grupo responsável pela <strong>Palestra sobre Lógica de Programação</strong>.</p>
+                <button class="botao-lista"><a href="GrupoD.html">Visitar grupo</a></button>
+            </div>
+            <div class="grupo-lista grupoE">
+                <h3 class="titulo-lista-grupos">Grupo E</h3>
+                <p class="texto-lista">Grupo responsável pela <strong>Palestra sobre Instrodução ao Desenvolvimento Web</strong>.</p>
+                <button class="botao-lista"><a href="GrupoE.html">Visitar grupo</a></button>
+            </div>
+            <div class="grupo-lista grupoF">
+                <h3 class="titulo-lista-grupos">Grupo F</h3>
+                <p class="texto-lista">Grupo responsável pelo <strong>Curso Online de Introdução a Programação Object Camion</strong>.</p>
+                <button class="botao-lista"><a href="GrupoF.html">Visitar grupo</a></button>
+            </div>
+        </div>
         <div class="conteudo">
             <div class="topo-conteudo">
                 <p class="nome-grupo">
-                    <a href="GrupoA.html" class="link-grupo">Grupo A</a>
+                    Grupo A
                 </p>
                 <p class="assunto">
                     Visita a Escola
@@ -49,13 +80,32 @@
                     <span class="material-symbols-outlined">arrow_back_ios</span>
                 </button>
                 <div class="imagens-conteudo">
-                    <img src="assets/imagens/img-certa1.png" alt="" class="imagem-conteudo imagens-slide1 on">
-                    <img src="assets/imagens/img-certa2.jpg" alt="" class="imagem-conteudo imagens-slide1">
+                    <div class="foto imagem-conteudo imagens-slide1 on" id="foto1">
+                        <a href="#fechar"><button class="botao-fechar">X</button></a>
+                        <a href="#foto1" class="link-foto">
+                            <img src="assets/imagens/Tom Clancy's Rainbow Six® Siege2023-3-13-12-58-37.jpg" alt="" class="imagem">
+                        </a>
+                        <div class="conteiner-icone">
+                            <a href="#foto1">
+                                <span class="material-symbols-outlined icone-aumentar">open_in_full</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="foto imagem-conteudo imagens-slide1" id="foto2">
+                        <a href="#fechar"><button class="botao-fechar">X</button></a>                        
+                        <a href="#foto2" class="link-foto">
+                            <img src="assets/imagens/Tom Clancy's Rainbow Six® Siege2023-3-9-22-44-0.jpg" alt="">
+                        </a>
+                        <div class="conteiner-icone">
+                            <a href="#foto2">
+                                <span class="material-symbols-outlined icone-aumentar">open_in_full</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <button class="botao-slider" id="next-button1">
                     <span class="material-symbols-outlined">arrow_forward_ios</span>  
                 </button>
-                <!-- SETAS MOBILE -->
                 <div class="setas-mobile">
                     <div class="seta-prev-mobile">
                         <button class="botao-seta-mobile">
@@ -76,33 +126,42 @@
         <div class="conteudo">
             <div class="topo-conteudo">
                 <p class="nome-grupo">
-                    <a href="GrupoB.html" class="link-grupo">Grupo B</a>
+                    Grupo A
                 </p>
                 <p class="assunto">
-                    Criando Mini-Curso
+                    Visita a Escola
                 </p>
             </div>
             <div class="conteudo-slider">
-                <button class="botao-slider" id="prev-button2">
+                <button class="botao-slider" id="prev-button2"> <!--Muda o prev-button-->
                     <span class="material-symbols-outlined">arrow_back_ios</span>
                 </button>
                 <div class="imagens-conteudo">
-                    <img src="assets/imagens/img-certa1.png" alt="" class="imagem-conteudo imagens-slide2 on">
-                    <img src="assets/imagens/Tom Clancy's Rainbow Six® Siege2023-3-9-22-44-0.jpg" alt="" class="imagem-conteudo imagens-slide2 ">
+                    <div class="foto imagem-conteudo imagens-slide2 on" id="foto3"> <!--Muda o imagens-slide e o id foto-->
+                        <a href="#fechar"><button class="botao-fechar">X</button></a>
+                        <a href="#foto3" class="link-foto"> <!--Muda o id foto com o msm número que o anterior-->
+                            <img src="assets/imagens/Tom Clancy's Rainbow Six® Siege2023-3-13-12-58-37.jpg" alt="" class="imagem">
+                        </a>
+                    </div>
+                    <div class="foto imagem-conteudo imagens-slide2" id="foto4"> <!--Muda o imagens-slide e o id foto-->
+                        <a href="#fechar"><button class="botao-fechar">X</button></a>                        
+                        <a href="#foto4" class="link-foto"> <!--Muda o id foto com o msm número que o anterior-->
+                            <img src="assets/imagens/Tom Clancy's Rainbow Six® Siege2023-3-9-22-44-0.jpg" alt="">
+                        </a>
+                    </div>
                 </div>
-                <button class="botao-slider" id="next-button2">
+                <button class="botao-slider" id="next-button2"> <!--Muda o next-button-->
                     <span class="material-symbols-outlined">arrow_forward_ios</span>  
                 </button>
-                <!-- SETAS MOBILE -->
                 <div class="setas-mobile">
                     <div class="seta-prev-mobile">
                         <button class="botao-seta-mobile">
-                            <span class="material-symbols-outlined " id="prev-button-mobile2">arrow_back_ios</span>
+                            <span class="material-symbols-outlined " id="prev-button-mobile">arrow_back_ios</span>
                         </button>
                     </div>
                     <div class="seta-next-mobile">
                         <button class="botao-seta-mobile">
-                            <span class="material-symbols-outlined" id="next-button-mobile2">arrow_forward_ios</span>  
+                            <span class="material-symbols-outlined" id="next-button-mobile">arrow_forward_ios</span>  
                         </button>
                     </div>
                 </div>
