@@ -17,6 +17,11 @@ header a:hover {
     background-color: rgba(0, 0, 0, .05);
 }
 
+img{
+    width: 100%;
+}
+
+
 #imagem-logo {
     width: 50px;
     height: 50px;
@@ -35,6 +40,10 @@ header a:hover {
 
 .conteudo {
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.36);
+}
+
+.lista-grupos{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.36); 
 }
 
 #menu {
@@ -148,13 +157,14 @@ header a:hover {
     display: none;
 }
 
+.img1 {
+    display: none;
+}
+
 .img2 {
     display: none;
 }
 
-.img1 {
-    display: none;
-}
 
 /* Se tiver mais de 3 imagens precica colocar mais ".img3" ".img4"... */
 
@@ -185,16 +195,6 @@ header a:hover {
     background-color: #939393;
 }
 
-.lista-grupos{
-    display: flex;
-    width: 60vw;
-    height: 400px;
-    background-color: #e7e7e7;
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
 
 .grupo-lista{
     border: 1px solid rgba(0, 0, 0, 0.426);
@@ -225,14 +225,32 @@ header a:hover {
     text-align: center;
 }
 
+.atalhos{
+    position: absolute;
+    margin-top: 5px;
+}
+
+.icones-atalhos{
+    border-radius: 50%;
+}
+
+.icones-atalhos:hover{
+    background-color: #939393;
+}
+
 @media (max-width: 655px) {
     .conteudo {
         box-sizing: border-box;
         height: 100%;
         background-color: #e7e7e7;
         margin-top: 50px;
-        width: 100%;
+        width: 100%; 
+    }   
+
+    .conteudo-texto{
+        grid-area: conteudo-texto;
     }
+
 
     .conteudo .topo-conteudo {
         display: flex;
@@ -309,15 +327,19 @@ header a:hover {
         display: none;
     }
 
-    .imagem{
-        width: 100%;
-    }
-
     .link-foto{
         cursor: default;
     }
-}
 
+    .icone-aumentar{
+        display: none;        
+    }
+
+    .lista-grupos{
+        margin-top: 50px;
+    }    
+
+}
 
 @media (min-width: 656px) and (max-width: 1199px) {
     .conteudo {
@@ -371,6 +393,20 @@ header a:hover {
     .link-foto{
         cursor: default;
     }
+
+    .lista-grupos{
+        margin: 50px auto;
+        width: 70vw;
+    }
+
+    .texto-lista{
+        text-align: center;
+    }
+
+    .icone-aumentar{
+        display: none;
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -446,7 +482,8 @@ header a:hover {
 
     .foto:target{
         position: fixed;
-        width: 65vw;
+        width: auto;
+        max-width: 60vw;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -470,11 +507,6 @@ header a:hover {
         display: none;
     }
 
-    .container-icone{
-        position: relative;
-        grid-area: conteiner-icone;
-    }
-
     .icone-aumentar{
         position: absolute;
         right: 35px;
@@ -482,4 +514,14 @@ header a:hover {
         color: #fff;
         cursor: pointer;
     }
+
+    .lista-grupos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 60vw;
+        height: 400px;
+        background-color: #e7e7e7;
+        margin-top: 50px;
+    }    
 }
