@@ -100,7 +100,6 @@ img{
     background-color: #e7e7e7;
     margin: 50px auto;
     width: 70%;
-    padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1px 1fr;
     grid-template-areas: "participantes separacao projeto";
@@ -133,10 +132,12 @@ img{
 
 .conteudo-grupo .participantes {
     grid-area: participantes;
+    padding: 10px;
 }
 
 .conteudo-grupo .projeto {
     grid-area: projeto;
+    padding: 10px;
 }
 
 .conteudo-grupo .separacao {
