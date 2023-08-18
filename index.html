@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Extensão</title>
     <link rel="shortcut icon" href="assets/icons/icons8-casa-16.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;500&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header id="header">
         <a href="index.html" id="link-logo">
             <img src="assets/imagens/IFSP-VTP-Logo-Color-2 (IF-Apenas).png" alt="Logo IFSP" srcset="" id="imagem-logo">
         </a>
-        <h2>Projeto de Extensão</h1>
+        <a href="index.html">
+            <h2>Projeto de Extensão</h2>
+        </a>
         <nav id="nav">
             <button id="btn-mobile">
                 <span class="material-symbols-outlined">
@@ -28,7 +41,6 @@
                 <li><a href="GrupoD.html">Grupo D</a></li>
                 <li><a href="GrupoE.html">Grupo E</a></li>
                 <li><a href="GrupoF.html">Grupo F</a></li>
-                <li><a href="GrupoG.html">Grupo G</a></li>
                 <li><a href="TodosGrupos.html">Todos os grupos</a></li>
             </ul>
         </nav>
@@ -46,36 +58,42 @@
             </a>
         </div>
         <div class="lista-grupos">
-            <div class="grupo-lista grupoA">
-                <h3 class="titulo-lista-grupos">Grupo A</h3>
-                <p class="texto-lista">Grupo responsável pelas <strong>Palestras Lógicas para Jogos</strong>.</p>
-                <button class="botao-lista"><a href="GrupoA.html">Visitar grupo</a></button>
-            </div>
-            <div class="grupo-lista grupoB">
-                <h3 class="titulo-lista-grupos">Grupo B</h3>
-                <p class="texto-lista">Grupo responsável pelo <strong>Mini-curso de Introdução a Informática</strong>.</p>
-                <button class="botao-lista"><a href="GrupoB.html">Visitar grupo</a></button>
-            </div>
-            <div class="grupo-lista grupoC">
-                <h3 class="titulo-lista-grupos">Grupo C</h3>
-                <p class="texto-lista">Grupo responsável pelas <strong>Oficinas de Instrodução a Plataformas Virtuais</strong>.</p>
-                <button class="botao-lista"><a href="GrupoC.html">Visitar grupo</a></button>
-            </div>
-            <div class="grupo-lista grupoD">
-                <h3 class="titulo-lista-grupos">Grupo D</h3>
-                <p class="texto-lista">Grupo responsável pela <strong>Palestra sobre Lógica de Programação</strong>.</p>
-                <button class="botao-lista"><a href="GrupoD.html">Visitar grupo</a></button>
-            </div>
-            <div class="grupo-lista grupoE">
-                <h3 class="titulo-lista-grupos">Grupo E</h3>
-                <p class="texto-lista">Grupo responsável pela <strong>Palestra sobre Instrodução ao Desenvolvimento Web</strong>.</p>
-                <button class="botao-lista"><a href="GrupoE.html">Visitar grupo</a></button>
-            </div>
-            <div class="grupo-lista grupoF">
-                <h3 class="titulo-lista-grupos">Grupo F</h3>
-                <p class="texto-lista">Grupo responsável pelo <strong>Curso Online de Introdução a Programação Object Camion</strong>.</p>
-                <button class="botao-lista"><a href="GrupoF.html">Visitar grupo</a></button>
-            </div>
+            <a href="GrupoA.html" class="link-grupos-lista">
+                <div class="grupoA div-grupos-lista">
+                    <h3 class="titulo-lista-grupos">Grupo A</h3>
+                    <p class="texto-lista">Palestras Lógicas para Jogos.</p>
+                </div>
+            </a>
+            <a href="GrupoB.html" class="link-grupos-lista">
+                <div class="grupoB div-grupos-lista">
+                    <h3 class="titulo-lista-grupos">Grupo B</h3>
+                    <p class="texto-lista">Mini-curso de Introdução a Informática.</p>
+                </div>
+            </a>
+            <a href="GrupoC.html" class="link-grupos-lista">
+                <div class="grupoC div-grupos-lista">
+                    <h3 class="titulo-lista-grupos">Grupo C</h3>
+                    <p class="texto-lista">Palestras Lógicas para Jogos.</p>
+                </div>
+            </a>
+            <a href="GrupoD.html" class="link-grupos-lista">
+                <div class="grupoD div-grupos-lista">
+                    <h3 class="titulo-lista-grupos">Grupo D</h3>
+                    <p class="texto-lista">Palestras Lógicas para Jogos.</p>
+                </div>
+            </a>
+            <a href="GrupoE.html" class="link-grupos-lista">
+                <div class="grupoE">
+                    <h3 class="titulo-lista-grupos">Grupo E</h3>
+                    <p class="texto-lista">Palestras Lógicas para Jogos.</p>
+                </div>
+            </a>
+            <a href="GrupoF.html" class="link-grupos-lista">
+                <div class="grupoF div-grupos-lista">
+                    <h3 class="titulo-lista-grupos">Grupo F</h3>
+                    <p class="texto-lista">Palestras Lógicas para Jogos.</p>
+                </div>
+            </a>
         </div>
         <div class="conteudo">
             <div class="topo-conteudo">
@@ -103,7 +121,7 @@
                         </div>
                     </div>
                     <div class="foto imagem-conteudo imagens-slide1" id="foto2">
-                        <a href="#fechar"><button class="botao-fechar">X</button></a>                        
+                        <a href="#fechar"><button class="botao-fechar">X</button></a>
                         <a href="#foto2" class="link-foto">
                             <img src="assets/imagens/img-certa1.png" alt="">
                         </a>
@@ -114,7 +132,7 @@
                         </div>
                     </div>
                     <div class="foto imagem-conteudo imagens-slide1" id="foto3">
-                        <a href="#fechar"><button class="botao-fechar">X</button></a>                        
+                        <a href="#fechar"><button class="botao-fechar">X</button></a>
                         <a href="#foto3" class="link-foto">
                             <img src="assets/imagens/imagem-certa3.jpg" alt="">
                         </a>
@@ -126,7 +144,7 @@
                     </div>
                 </div>
                 <button class="botao-slider" id="next-button1">
-                    <span class="material-symbols-outlined">arrow_forward_ios</span>  
+                    <span class="material-symbols-outlined">arrow_forward_ios</span>
                 </button>
                 <div class="setas-mobile">
                     <div class="seta-prev-mobile">
@@ -136,13 +154,15 @@
                     </div>
                     <div class="seta-next-mobile">
                         <button class="botao-seta-mobile">
-                            <span class="material-symbols-outlined" id="next-button-mobile">arrow_forward_ios</span>  
+                            <span class="material-symbols-outlined" id="next-button-mobile">arrow_forward_ios</span>
                         </button>
                     </div>
                 </div>
             </div>
             <div class="conteudo-texto">
-                <p class="texto-conteudo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vel illo nemo delectus rerum, rem laudantium possimus fugit ullam sint labore, beatae nihil molestiae? Explicabo eos deleniti maxime pariatur impedit.</p>
+                <p class="texto-conteudo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vel illo nemo
+                    delectus rerum, rem laudantium possimus fugit ullam sint labore, beatae nihil molestiae? Explicabo
+                    eos deleniti maxime pariatur impedit.</p>
             </div>
         </div>
 
@@ -162,21 +182,23 @@
                     <span class="material-symbols-outlined">arrow_back_ios</span>
                 </button>
                 <div class="imagens-conteudo">
-                    <div class="foto imagem-conteudo imagens-slide2 on" id="foto3"> <!--Muda o imagens-slide e o id foto-->
+                    <div class="foto imagem-conteudo imagens-slide2 on" id="foto3">
+                        <!--Muda o imagens-slide e o id foto-->
                         <a href="#fechar"><button class="botao-fechar">X</button></a>
                         <a href="#foto3" class="link-foto"> <!--Muda o id foto com o msm número que o anterior-->
-                            <img src="assets/imagens/Tom Clancy's Rainbow Six® Siege2023-3-13-12-58-37.jpg" alt="" class="imagem">
+                            <img src="assets/imagens/Tom Clancy's Rainbow Six® Siege2023-3-13-12-58-37.jpg" alt=""
+                                class="imagem">
                         </a>
                     </div>
                     <div class="foto imagem-conteudo imagens-slide2" id="foto4"> <!--Muda o imagens-slide e o id foto-->
-                        <a href="#fechar"><button class="botao-fechar">X</button></a>                        
+                        <a href="#fechar"><button class="botao-fechar">X</button></a>
                         <a href="#foto4" class="link-foto"> <!--Muda o id foto com o msm número que o anterior-->
                             <img src="assets/imagens/Tom Clancy's Rainbow Six® Siege2023-3-9-22-44-0.jpg" alt="">
                         </a>
                     </div>
                 </div>
                 <button class="botao-slider" id="next-button2"> <!--Muda o next-button-->
-                    <span class="material-symbols-outlined">arrow_forward_ios</span>  
+                    <span class="material-symbols-outlined">arrow_forward_ios</span>
                 </button>
                 <div class="setas-mobile">
                     <div class="seta-prev-mobile">
@@ -186,13 +208,15 @@
                     </div>
                     <div class="seta-next-mobile">
                         <button class="botao-seta-mobile">
-                            <span class="material-symbols-outlined" id="next-button-mobile2">arrow_forward_ios</span>  
+                            <span class="material-symbols-outlined" id="next-button-mobile2">arrow_forward_ios</span>
                         </button>
                     </div>
                 </div>
             </div>
             <div class="conteudo-texto">
-                <p class="texto-conteudo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vel illo nemo delectus rerum, rem laudantium possimus fugit ullam sint labore, beatae nihil molestiae? Explicabo eos deleniti maxime pariatur impedit.</p>
+                <p class="texto-conteudo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vel illo nemo
+                    delectus rerum, rem laudantium possimus fugit ullam sint labore, beatae nihil molestiae? Explicabo
+                    eos deleniti maxime pariatur impedit.</p>
             </div>
         </div>
         <div class="conteudo">
@@ -209,11 +233,13 @@
                     <span class="material-symbols-outlined">arrow_back_ios</span>
                 </button>
                 <div class="imagens-conteudo">
-                    <img src="assets/imagens/Tom Clancy's Rainbow Six® Siege2023-3-13-12-58-37.jpg" alt="" class="imagem-conteudo imagens-slide3 on">
-                    <img src="assets/imagens/Tom Clancy's Rainbow Six® Siege2023-3-9-22-44-0.jpg" alt="" class="imagem-conteudo imagens-slide3 ">
+                    <img src="assets/imagens/Tom Clancy's Rainbow Six® Siege2023-3-13-12-58-37.jpg" alt=""
+                        class="imagem-conteudo imagens-slide3 on">
+                    <img src="assets/imagens/Tom Clancy's Rainbow Six® Siege2023-3-9-22-44-0.jpg" alt=""
+                        class="imagem-conteudo imagens-slide3 ">
                 </div>
                 <button class="botao-slider" id="next-button3">
-                    <span class="material-symbols-outlined">arrow_forward_ios</span>  
+                    <span class="material-symbols-outlined">arrow_forward_ios</span>
                 </button>
                 <!-- SETAS MOBILE -->
                 <div class="setas-mobile">
@@ -224,20 +250,23 @@
                     </div>
                     <div class="seta-next-mobile">
                         <button class="botao-seta-mobile">
-                            <span class="material-symbols-outlined" id="next-button-mobile3">arrow_forward_ios</span>  
+                            <span class="material-symbols-outlined" id="next-button-mobile3">arrow_forward_ios</span>
                         </button>
                     </div>
                 </div>
             </div>
             <div class="conteudo-texto">
-                <p class="texto-conteudo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vel illo nemo delectus rerum, rem laudantium possimus fugit ullam sint labore, beatae nihil molestiae? Explicabo eos deleniti maxime pariatur impedit.</p>
+                <p class="texto-conteudo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vel illo nemo
+                    delectus rerum, rem laudantium possimus fugit ullam sint labore, beatae nihil molestiae? Explicabo
+                    eos deleniti maxime pariatur impedit.</p>
             </div>
         </div>
-        
+
     </main>
     <footer>
 
     </footer>
     <script src="assets/script/script.js"></script>
 </body>
+
 </html>
