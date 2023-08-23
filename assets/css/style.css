@@ -200,6 +200,11 @@ img{
     transition: .3s;
 }
 
+.titulo-header{
+    margin: 0 auto;
+}
+
+
 @media (max-width: 655px) {
     .conteudo {
         box-sizing: border-box;
@@ -337,7 +342,6 @@ img{
 
     #btn-mobile {
         display: flex;
-        padding: .5rem 1rem;
         font-size: 1rem;
         border: none;
         background: none;
@@ -637,13 +641,6 @@ img{
         background-color: #e7e7e7;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.36);
     }    
-
-    .titulo-header{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-    }
 
     #imagem-logo{
         position: absolute;
