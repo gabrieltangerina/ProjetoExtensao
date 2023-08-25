@@ -7,6 +7,35 @@ function toggleMenu(){
 
 btnMobile.addEventListener('click', toggleMenu);
 
+// ------------- Função que calcula o tempo -------------
+
+function calcularTempoPassado(data){
+    const dataPost = new Date(data);
+    const dataAtual = new Date();
+
+    const diferencaEmMilissegundos = dataAtual - dataPost;
+
+    const segundos = Math.floor(diferencaEmMilissegundos / 1000);
+    const minutos = Math.floor(segundos / 60);
+    const horas = Math.floor(minutos / 60);
+    const dias = Math.floor(horas / 24);
+    const meses = Math.floor(dias / 30);
+
+
+    if(meses > 0){
+        return `${meses}m`
+    }else if(dias > 0){
+        return `${dias}d`;
+    }else if(horas > 0){
+        return `${horas}h`;
+    }else if(minutos > 0){
+        return `${minutos}min`;
+    }else{
+        return `${segundos}s`;
+    }
+}
+
+
 // ------------------ SLIDE 1 ------------------
 const slider1 = document.querySelectorAll('.imagens-slide1');
 const btnPrev1 = document.getElementById('prev-button1');
@@ -49,6 +78,14 @@ btnPrev1.addEventListener('click', prevSlider)
 
 btnPrevMobile.addEventListener('click', prevSlider)
 btnNextMobile.addEventListener('click', nextSlider)
+
+const tempoPost1HTML = document.querySelector(".tempoDecorrido");
+
+const dataPost1 = "2023-08-24 21:08:00";
+const tempoPassadoPost1 = calcularTempoPassado(dataPost1);
+
+tempoPost1HTML.innerHTML = tempoPassadoPost1;
+
 
 // ------------------ SLIDE 2 ------------------
 const slider2 = document.querySelectorAll('.imagens-slide2');

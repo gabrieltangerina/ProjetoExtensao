@@ -225,6 +225,10 @@ img{
     width: 100%;
 }
 
+.tempoDecorrido{
+    color: rgba(0, 0, 0, 0.517);
+}
+
 
 @media (max-width: 655px) {
     .conteudo {
@@ -527,13 +531,10 @@ img{
 
     .conteudo .topo-conteudo {
         display: flex;
+        justify-content: space-around;
         margin-left: 15px;
+        margin-right: 15px;
         grid-area: topo-conteudo;
-    }
-
-
-    .conteudo .topo-conteudo .nome-grupo {
-        position: absolute;
     }
 
     .conteudo .topo-conteudo .assunto {
