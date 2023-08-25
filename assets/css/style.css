@@ -230,7 +230,7 @@ img{
     .conteudo {
         box-sizing: border-box;
         height: 100%;
-        background-color: #F8FAFC;
+        background-color: #ffffff;
         margin-top: 50px;
         width: 100%; 
     }   
@@ -387,7 +387,7 @@ img{
     .conteudo {
         box-sizing: border-box;
         height: 100%;
-        background-color: #F8FAFC;
+        background-color: #ffffff;
         width: 70vw;
         margin: 50px auto;
     }
