@@ -81,7 +81,7 @@ btnNextMobile.addEventListener('click', nextSlider)
 
 const tempoPost1HTML = document.querySelector(".tempoDecorrido");
 
-const dataPost1 = "2023-08-24 21:08:00";
+const dataPost1 = "2023-09-6 14:00:00";
 const tempoPassadoPost1 = calcularTempoPassado(dataPost1);
 
 tempoPost1HTML.innerHTML = tempoPassadoPost1;
