@@ -35,6 +35,18 @@ function calcularTempoPassado(data){
     }
 }
 
+// ------------------ IntersectionObserver ------------------
+const conteudos = document.querySelectorAll(".hidden");
+
+const myObserver = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    })
+});
+
+conteudos.forEach((conteudo)=> myObserver.observe(conteudo));
 
 // ------------------ SLIDE 1 ------------------
 const slider1 = document.querySelectorAll('.imagens-slide1');
@@ -81,8 +93,8 @@ btnNextMobile.addEventListener('click', nextSlider)
 
 const tempoPost1HTML = document.querySelector(".tempoDecorrido");
 
-const dataPost1 = "2023-09-6 14:00:00";
-const tempoPassadoPost1 = calcularTempoPassado(dataPost1);
+let dataPost1 = "2023-09-06T19:20:00";
+let tempoPassadoPost1 = calcularTempoPassado(dataPost1);
 
 tempoPost1HTML.innerHTML = tempoPassadoPost1;
 

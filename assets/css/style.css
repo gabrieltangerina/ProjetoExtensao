@@ -75,6 +75,8 @@ img{
     grid-template-columns: 1fr 1px 1fr;
     grid-template-areas: "participantes separacao projeto";
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.36);
+    border: .5px solid rgba(0, 0, 0, 0.229);
+    border-radius: 5px;
 }
 
 .conteudo-grupo .titulo-grupo {
@@ -230,14 +232,68 @@ img{
     color: rgba(0, 0, 0, 0.517);
 }
 
+.informacoes-mobile{
+    padding: 10px;
+}
+
+.conteudo-grupo-mobile{
+    background-color: #e7e7e7;
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: .5px solid rgba(0, 0, 0, 0.229);
+    border-radius: 5px;
+}
+
+.titulo-grupo-mobile{
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+.titulo-grupo-mobile2{
+    text-align: center;
+    padding-top: 15px;
+    margin: 0;
+}
+
+.separacao-mobile{
+    border-bottom: 1px solid black;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+}
+
+section{
+    place-items: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 60px;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
+}
 
 @media (max-width: 655px) {
     .conteudo {
         box-sizing: border-box;
-        height: 100%;
         background-color: #e7e7e7;
         margin-top: 50px;
-        width: 100%; 
+        width: 95%;
+        margin: 40px auto; 
     }   
 
     .conteudo-texto{
@@ -386,6 +442,9 @@ img{
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.36);
     }    
     
+    .conteudo-grupo{
+        display: none;
+    }
 }
 
 @media (min-width: 656px) and (max-width: 1199px) {
@@ -505,6 +564,10 @@ img{
         background-color: #e7e7e7;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.36);
     }    
+
+    .conteudo-grupo-mobile{
+        display: none;
+    }
 
 }
 
@@ -668,6 +731,10 @@ img{
     #imagem-logo{
         position: absolute;
         top: 15px;
+    }
+
+    .conteudo-grupo-mobile{
+        display: none;
     }
     
 }
