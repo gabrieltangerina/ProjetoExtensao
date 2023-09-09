@@ -1,4 +1,6 @@
 * {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-family: 'PT Serif', serif;
     font-family: 'Roboto', sans-serif;
 }
@@ -284,6 +286,31 @@ section {
     transition: all .8s;
 }
 
+.topo-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "nome assunto tempo";
+    height: 40px;
+}
+
+.nome-grupo {
+    grid-area: nome;
+    margin: auto 0;
+}
+
+.assunto {
+    grid-area: assunto;
+    margin: auto;
+}
+
+.tempoDecorrido {
+    grid-area: tempo;
+    text-align: right;
+    margin: auto 5px auto 0;
+}
+
+
+
 @media (max-width: 655px) {
     .conteudo {
         box-sizing: border-box;
@@ -295,15 +322,6 @@ section {
 
     .conteudo-texto {
         grid-area: conteudo-texto;
-    }
-
-
-    .conteudo .topo-conteudo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 15px;
-        margin-right: 15px;
     }
 
     .informacoes-projeto {
@@ -434,7 +452,7 @@ section {
         display: none;
     }
 
-    .lista-grupos{
+    .lista-grupos {
         width: 95%;
         margin: 50px auto;
         border: 1px solid rgba(0, 0, 0, 0.45);
@@ -442,17 +460,17 @@ section {
         border-width: 90%;
     }
 
-    .div-grupos-lista{
+    .div-grupos-lista {
         border-bottom: 1px solid rgba(0, 0, 0, 0.45);
         margin: 0 auto;
     }
 
-    .div-grupos-lista:hover{
+    .div-grupos-lista:hover {
         background-color: #9393933d;
         transition: 0.3s;
     }
 
-    .titulo-lista-grupos{
+    .titulo-lista-grupos {
         margin: 0;
         padding: 10px;
     }
@@ -465,14 +483,6 @@ section {
         background-color: #e7e7e7;
         width: 70vw;
         margin: 50px auto;
-    }
-
-    .conteudo .topo-conteudo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 15px;
-        margin-right: 15px;
     }
 
     .conteudo .imagens-conteudo {
@@ -569,7 +579,7 @@ section {
         display: none;
     }
 
-    .lista-grupos{
+    .lista-grupos {
         width: 90%;
         margin: 50px auto;
         border: 1px solid rgba(0, 0, 0, 0.45);
@@ -577,17 +587,17 @@ section {
         border-width: 90%;
     }
 
-    .div-grupos-lista{
+    .div-grupos-lista {
         border-bottom: 1px solid rgba(0, 0, 0, 0.45);
         margin: 0 auto;
     }
 
-    .div-grupos-lista:hover{
+    .div-grupos-lista:hover {
         background-color: #9393933d;
         transition: 0.3s;
     }
 
-    .titulo-lista-grupos{
+    .titulo-lista-grupos {
         margin: 0;
         padding: 10px;
     }
@@ -614,18 +624,6 @@ section {
 
     .conteudo-texto {
         grid-area: conteudo-texto;
-    }
-
-    .conteudo .topo-conteudo {
-        display: flex;
-        justify-content: space-around;
-        margin-left: 15px;
-        margin-right: 15px;
-        grid-area: topo-conteudo;
-    }
-
-    .conteudo .topo-conteudo .assunto {
-        margin: 15px auto;
     }
 
     .conteudo .imagens-conteudo {
