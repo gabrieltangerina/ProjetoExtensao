@@ -615,7 +615,7 @@ section {
 
     .conteudo {
         background-color: #e7e7e7;
-        width: 40vw;
+        width: 45vw;
         margin: 50px;
         display: grid;
         grid-template-rows: auto 1fr 1px auto;
@@ -665,7 +665,7 @@ section {
         width: 60vw;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -70%);
         padding: 25px 10px 10px 10px;
         border: solid 1px #333;
         box-shadow: 0 0 25px 10px #00000067;
