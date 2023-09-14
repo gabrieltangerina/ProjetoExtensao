@@ -97,8 +97,8 @@ function criaConteudo(imagens, botaoPrev, botaoNext, btnMobilePrev, btnMobileNex
     botaoNext.addEventListener('click', nextSlider);
     botaoPrev.addEventListener('click', prevSlider);
     
-    btnMobilePrev.addEventListener('click', nextSlider);
-    btnMobileNext.addEventListener('click', prevSlider);
+    btnMobilePrev.addEventListener('click', prevSlider);
+    btnMobileNext.addEventListener('click', nextSlider);
 }
 
 
