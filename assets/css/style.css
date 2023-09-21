@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+img{
+    width: 100%;
+}
+
 body,
 ul {
     margin: 0px;
@@ -24,18 +28,6 @@ h2 {
 #menu a:hover {
     background-color: rgba(0, 0, 0, .05);
 }
-
-img {
-    width: 100%;
-}
-
-.conteudo img {
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    object-position: center;
-    /*Onde ficará o foco da imagem*/
-}
-
 
 #imagem-logo {
     width: 50px;
@@ -68,14 +60,14 @@ img {
 
 .conteudo-grupo {
     background-color: #e7e7e7;
-    margin: 50px auto;
-    width: 70%;
     display: grid;
     grid-template-columns: 1fr 1px 1fr;
     grid-template-areas: "participantes separacao projeto";
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.36);
     border: .5px solid rgba(0, 0, 0, 0.229);
     border-radius: 5px;
+    width: 60%;
+    margin: 100px auto;
 }
 
 .conteudo-grupo .titulo-grupo {
@@ -136,17 +128,6 @@ img {
 .imagem-conteudo {
     display: none;
 }
-
-.img1 {
-    display: none;
-}
-
-.img2 {
-    display: none;
-}
-
-
-/* Se tiver mais de 3 imagens precica colocar mais ".img3" ".img4"... */
 
 .on {
     display: block;
@@ -266,10 +247,9 @@ footer {
 }
 
 section {
-    place-items: center;
-    align-items: center;
-    height: auto;
+    display: flex;
     margin-bottom: 60px;
+    justify-content: space-around;
 }
 
 .hidden {
@@ -290,7 +270,6 @@ section {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: "nome assunto tempo";
-    height: 40px;
 }
 
 .nome-grupo {
@@ -301,6 +280,7 @@ section {
 .assunto {
     grid-area: assunto;
     margin: auto;
+    text-align: center;
 }
 
 .tempoDecorrido {
@@ -309,7 +289,18 @@ section {
     margin: auto 5px auto 0;
 }
 
+.conteudo img {
+    border-radius: 5px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    /*Onde ficará o foco da imagem*/
+}
 
+.tempoPostagem{
+    text-align: right;
+    margin-right: 5px;
+}
 
 @media (max-width: 655px) {
     .conteudo {
@@ -601,21 +592,14 @@ section {
         margin: 0;
         padding: 10px;
     }
-
+    
 }
 
 @media (min-width: 1200px) {
 
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: space-around;
-    }
-
     .conteudo {
         background-color: #e7e7e7;
-        width: 45vw;
+        width: 60%;
         margin: 50px;
         display: grid;
         grid-template-rows: auto 1fr 1px auto;
@@ -657,39 +641,6 @@ section {
     }
 
     .botao-fechar {
-        display: none;
-    }
-
-    .foto:target {
-        position: fixed;
-        width: 60vw;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -70%);
-        padding: 25px 10px 10px 10px;
-        border: solid 1px #333;
-        box-shadow: 0 0 25px 10px #00000067;
-        background-color: #fff;
-        border-radius: 5px;
-        z-index: 2;
-    }
-
-    .foto:target .botao-fechar {
-        display: flex;
-        position: absolute;
-        right: 10px;
-        top: 3px;
-        cursor: pointer;
-        padding: 2.5px 7px 3px 7px;
-        border: none;
-        background-color: rgba(255, 50, 50, 0.559);
-    }
-
-    .foto:target .botao-fechar:hover {
-        background-color: rgba(255, 34, 34, 0.854);
-    }
-
-    .foto:target .icone-aumentar {
         display: none;
     }
 
@@ -756,5 +707,4 @@ section {
     .conteudo-grupo-mobile {
         display: none;
     }
-
 }

@@ -1,3 +1,4 @@
+
 const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu() {
@@ -49,23 +50,70 @@ const myObserver = new IntersectionObserver((entries) => {
 conteudos.forEach((conteudo) => myObserver.observe(conteudo));
 
 // ------------------ SLIDE 1 ------------------
-const slider1 = document.querySelectorAll('.imagens-slide1');
-const btnPrev1 = document.getElementById('prev-button1');
-const btnNext1 = document.getElementById('next-button1');
-const btnPrevMobile = document.getElementById('prev-button-mobile');
-const btnNextMobile = document.getElementById('next-button-mobile');
+const titulo = document.querySelector(".titulo-header");
 
-criaConteudo(slider1, btnPrev1, btnNext1, btnPrevMobile, btnNextMobile);
+if(titulo.innerHTML == "Projeto de Extensão"){
+    const slider1 = document.querySelectorAll('.imagens-slide1');
+    const btnPrev1 = document.getElementById('prev-button1');
+    const btnNext1 = document.getElementById('next-button1');
+    const btnPrevMobile = document.getElementById('prev-button-mobile');
+    const btnNextMobile = document.getElementById('next-button-mobile');
 
-const tempoPost1HTML = document.querySelector(".tempoDecorrido");
-let dataPost1 = "2023-09-09T15:47:00";
-let tempoPassadoPost1 = calcularTempoPassado(dataPost1);
-tempoPost1HTML.innerHTML = tempoPassadoPost1;
+    const tempoPost1HTML = document.querySelector(".tempoDecorrido1");
+    let dataPost1 = "2023-09-09T15:47:00";
+    let tempoPassadoPost1 = calcularTempoPassado(dataPost1);
+    tempoPost1HTML.innerHTML = tempoPassadoPost1;
+
+    criaConteudo(slider1, btnPrev1, btnNext1, btnPrevMobile, btnNextMobile);
+
+
+    const slider2 = document.querySelectorAll('.imagens-slide2');
+    const btnPrev2 = document.getElementById('prev-button2');
+    const btnNext2 = document.getElementById('next-button2');
+
+    const btnPrevMobile2 = document.getElementById('prev-button-mobile2');
+    const btnNextMobile2 = document.getElementById('next-button-mobile2');
+
+    const tempoPost2HTML = document.querySelector(".tempoDecorrido2");
+    let dataPost2 = "2023-09-20T21:43:00";
+    let tempoPassadoPost2 = calcularTempoPassado(dataPost2);
+    tempoPost2HTML.innerHTML = tempoPassadoPost2;
+
+    criaConteudo(slider2, btnPrev2, btnNext2, btnPrevMobile2, btnNextMobile2);
+}
+if (titulo.innerHTML == "Grupo C") {
+    const slider1 = document.querySelectorAll('.imagens-slide1');
+    const btnPrev1 = document.getElementById('prev-button1');
+    const btnNext1 = document.getElementById('next-button1');
+    const btnPrevMobile = document.getElementById('prev-button-mobile');
+    const btnNextMobile = document.getElementById('next-button-mobile');
+
+    const tempoPost1HTML = document.querySelector(".tempoDecorrido1");
+    let dataPost1 = "2023-09-09T15:47:00";
+    let tempoPassadoPost1 = calcularTempoPassado(dataPost1);
+    tempoPost1HTML.innerHTML = tempoPassadoPost1;
+
+    criaConteudo(slider1, btnPrev1, btnNext1, btnPrevMobile, btnNextMobile);
+} else if (titulo.innerHTML == "Grupo B") {
+    const slider2 = document.querySelectorAll('.imagens-slide2');
+    const btnPrev2 = document.getElementById('prev-button2');
+    const btnNext2 = document.getElementById('next-button2');
+
+    const btnPrevMobile2 = document.getElementById('prev-button-mobile2');
+    const btnNextMobile2 = document.getElementById('next-button-mobile2');
+
+    const tempoPost2HTML = document.querySelector(".tempoDecorrido2");
+    let dataPost2 = "2023-09-20T21:43:00";
+    let tempoPassadoPost2 = calcularTempoPassado(dataPost2);
+    tempoPost2HTML.innerHTML = tempoPassadoPost2;
+
+    criaConteudo(slider2, btnPrev2, btnNext2, btnPrevMobile2, btnNextMobile2);
+}
 
 
 function criaConteudo(imagens, botaoPrev, botaoNext, btnMobilePrev, btnMobileNext) {
     let currentSlide = 0;
-    
+
     function hideSlider() {
         imagens.forEach(item => item.classList.remove('on'));
     };
@@ -73,7 +121,7 @@ function criaConteudo(imagens, botaoPrev, botaoNext, btnMobilePrev, btnMobileNex
     function showSlider() {
         imagens[currentSlide].classList.add('on');
     };
-    
+
     function nextSlider() {
         hideSlider();
         if (currentSlide === imagens.length - 1) {
@@ -83,7 +131,7 @@ function criaConteudo(imagens, botaoPrev, botaoNext, btnMobilePrev, btnMobileNex
         }
         showSlider();
     };
-    
+
     function prevSlider() {
         hideSlider();
         if (currentSlide === 0) {
@@ -93,21 +141,10 @@ function criaConteudo(imagens, botaoPrev, botaoNext, btnMobilePrev, btnMobileNex
         }
         showSlider();
     };
-    
+
     botaoNext.addEventListener('click', nextSlider);
     botaoPrev.addEventListener('click', prevSlider);
-    
+
     btnMobilePrev.addEventListener('click', prevSlider);
     btnMobileNext.addEventListener('click', nextSlider);
 }
-
-
-// ------------------ SLIDE 2 ------------------
-const slider2 = document.querySelectorAll('.imagens-slide2');
-const btnPrev2 = document.getElementById('prev-button2');
-const btnNext2 = document.getElementById('next-button2');
-
-const btnPrevMobile2 = document.getElementById('prev-button-mobile2');
-const btnNextMobile2 = document.getElementById('next-button-mobile2');
-
-criaConteudo(slider2, btnPrev2, btnNext2, btnPrevMobile2, btnNextMobile2);
