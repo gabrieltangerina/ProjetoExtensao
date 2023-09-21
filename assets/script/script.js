@@ -80,8 +80,7 @@ if(titulo.innerHTML == "Projeto de Extensão"){
     tempoPost2HTML.innerHTML = tempoPassadoPost2;
 
     criaConteudo(slider2, btnPrev2, btnNext2, btnPrevMobile2, btnNextMobile2);
-}
-if (titulo.innerHTML == "Grupo C") {
+}else if (titulo.innerHTML == "Grupo C") {
     const slider1 = document.querySelectorAll('.imagens-slide1');
     const btnPrev1 = document.getElementById('prev-button1');
     const btnNext1 = document.getElementById('next-button1');
