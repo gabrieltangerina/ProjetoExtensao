@@ -5,7 +5,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-img{
+img {
     width: 100%;
 }
 
@@ -290,17 +290,55 @@ section {
 }
 
 .conteudo img {
-    border-radius: 5px;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 9; /*PRECISA DISSO*/
     object-fit: cover;
     object-position: center;
     /*Onde ficará o foco da imagem*/
 }
 
-.tempoPostagem{
+.tempoPostagem {
     text-align: right;
     margin-right: 5px;
 }
+
+.swiper-slide {
+    width: 600px;
+    height: 100%;
+    background-color: rgb(40, 40, 33);
+}
+
+.swiper-slide img {
+    display: flex;
+    position: relative;
+    width: 400px;
+    object-fit: cover;
+}
+
+/* COLOCAR UM PARA CELULAR, TABLET E COMPUTADOR */
+/* TAMANHO DA FOTO */
+.swiper {
+    position: relative;
+    width: 100%;
+    height: auto !important;
+}
+
+.swiper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.swiper-wrapper {
+    
+}
+
+.conteudo-slider{
+    position: relative;
+    overflow: hidden;
+}
+
+
 
 @media (max-width: 655px) {
     .conteudo {
@@ -465,6 +503,7 @@ section {
         margin: 0;
         padding: 10px;
     }
+
 }
 
 @media (min-width: 656px) and (max-width: 1199px) {
@@ -488,12 +527,6 @@ section {
     .conteudo .texto-conteudo {
         padding: 15px;
         margin: 0px;
-    }
-
-    .conteudo-slider {
-        display: grid;
-        grid-template-columns: 30px 1fr 30px;
-        grid-template-areas: "prev-button img next-button";
     }
 
     .setas-mobile {
@@ -592,18 +625,14 @@ section {
         margin: 0;
         padding: 10px;
     }
-    
+
 }
 
 @media (min-width: 1200px) {
-
     .conteudo {
         background-color: #e7e7e7;
         width: 60%;
         margin: 50px;
-        display: grid;
-        grid-template-rows: auto 1fr 1px auto;
-        grid-template-areas: "topo-conteudo" "on" "conteiner-icone" "conteudo-texto";
     }
 
     .conteudo-texto {
@@ -622,13 +651,6 @@ section {
     .conteudo .texto-conteudo {
         padding: 15px;
         margin: 0px;
-    }
-
-    .conteudo-slider {
-        display: grid;
-        position: relative;
-        grid-template-columns: 30px 1fr 30px;
-        grid-template-areas: "prev-button img next-button";
     }
 
     .setas-mobile {
@@ -707,4 +729,12 @@ section {
     .conteudo-grupo-mobile {
         display: none;
     }
+
+    .swiper {
+        position: relative;
+        width: auto;
+        height: 400px;
+        /*TAMANHO DA FOTO*/
+    }
+
 }

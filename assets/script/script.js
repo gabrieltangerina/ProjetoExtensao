@@ -1,4 +1,44 @@
+const bolinhasSlider = document.querySelector('.swiper-pagination').style.color = 'white';
 
+// Tirando a seta no modo mobile
+function tirarElementosDaPagina(){
+    const larguraDaJanela = window.innerWidth;
+
+    const tamanhoCelular = 655;
+
+    if(larguraDaJanela <= tamanhoCelular){
+        const setasNext = document.querySelectorAll(".swiper-button-next");
+        const setasPrev = document.querySelectorAll(".swiper-button-prev");
+
+        setasNext.forEach(seta => {
+            seta.style.display = 'none';
+        })
+
+        setasPrev.forEach(seta => {
+            seta.style.display = 'none';
+        })
+
+    }else{
+        const setasNext = document.querySelectorAll(".swiper-button-next");
+        const setasPrev = document.querySelectorAll(".swiper-button-prev");
+
+        setasNext.forEach(seta =>{
+            seta.style.display = 'flex';
+        })
+
+        setasPrev.forEach(seta =>{
+            seta.style.display = 'flex';
+        })
+    }
+
+
+}
+
+tirarElementosDaPagina();
+window.addEventListener('resize', tirarElementosDaPagina);
+
+
+// ------------ Menu Hamburguer ----------------
 const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu() {
@@ -53,60 +93,31 @@ conteudos.forEach((conteudo) => myObserver.observe(conteudo));
 const titulo = document.querySelector(".titulo-header");
 
 if(titulo.innerHTML == "Projeto de Extensão"){
-    const slider1 = document.querySelectorAll('.imagens-slide1');
-    const btnPrev1 = document.getElementById('prev-button1');
-    const btnNext1 = document.getElementById('next-button1');
-    const btnPrevMobile = document.getElementById('prev-button-mobile');
-    const btnNextMobile = document.getElementById('next-button-mobile');
-
     const tempoPost1HTML = document.querySelector(".tempoDecorrido1");
     let dataPost1 = "2023-09-09T15:47:00";
     let tempoPassadoPost1 = calcularTempoPassado(dataPost1);
     tempoPost1HTML.innerHTML = tempoPassadoPost1;
 
-    criaConteudo(slider1, btnPrev1, btnNext1, btnPrevMobile, btnNextMobile);
-
-
-    const slider2 = document.querySelectorAll('.imagens-slide2');
-    const btnPrev2 = document.getElementById('prev-button2');
-    const btnNext2 = document.getElementById('next-button2');
-
-    const btnPrevMobile2 = document.getElementById('prev-button-mobile2');
-    const btnNextMobile2 = document.getElementById('next-button-mobile2');
 
     const tempoPost2HTML = document.querySelector(".tempoDecorrido2");
     let dataPost2 = "2023-09-20T21:43:00";
     let tempoPassadoPost2 = calcularTempoPassado(dataPost2);
     tempoPost2HTML.innerHTML = tempoPassadoPost2;
 
-    criaConteudo(slider2, btnPrev2, btnNext2, btnPrevMobile2, btnNextMobile2);
 }else if (titulo.innerHTML == "Grupo C") {
-    const slider1 = document.querySelectorAll('.imagens-slide1');
-    const btnPrev1 = document.getElementById('prev-button1');
-    const btnNext1 = document.getElementById('next-button1');
-    const btnPrevMobile = document.getElementById('prev-button-mobile');
-    const btnNextMobile = document.getElementById('next-button-mobile');
 
     const tempoPost1HTML = document.querySelector(".tempoDecorrido1");
     let dataPost1 = "2023-09-09T15:47:00";
     let tempoPassadoPost1 = calcularTempoPassado(dataPost1);
     tempoPost1HTML.innerHTML = tempoPassadoPost1;
 
-    criaConteudo(slider1, btnPrev1, btnNext1, btnPrevMobile, btnNextMobile);
 } else if (titulo.innerHTML == "Grupo B") {
-    const slider2 = document.querySelectorAll('.imagens-slide2');
-    const btnPrev2 = document.getElementById('prev-button2');
-    const btnNext2 = document.getElementById('next-button2');
-
-    const btnPrevMobile2 = document.getElementById('prev-button-mobile2');
-    const btnNextMobile2 = document.getElementById('next-button-mobile2');
 
     const tempoPost2HTML = document.querySelector(".tempoDecorrido2");
     let dataPost2 = "2023-09-20T21:43:00";
     let tempoPassadoPost2 = calcularTempoPassado(dataPost2);
     tempoPost2HTML.innerHTML = tempoPassadoPost2;
 
-    criaConteudo(slider2, btnPrev2, btnNext2, btnPrevMobile2, btnNextMobile2);
 }
 
 

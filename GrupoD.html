@@ -12,8 +12,15 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald:wght@200;300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald:wght@200;300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@100;300;400&display=swap"
+        rel="stylesheet">
+
+    <!-- PARA USAR O CARROSEL  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
 </head>
+
 <body>
     <header id="header">
         <a href="index.html" id="link-logo">
@@ -67,7 +74,7 @@
                 <h3 class="titulo-grupo">Palestra sobre Lógica de Programação na escola SABE</h3>
                 <div class="informacoes-projeto">
                     <p>
-                        
+
                     </p>
                 </div>
             </div>
@@ -97,6 +104,27 @@
 
     </footer>
     <script src="assets/script/script.js"></script>
+
+    <!-- PARA USAR O CARROSEL  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- PARA USAR O CARROSEL  -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
 </body>
 
 </html>
