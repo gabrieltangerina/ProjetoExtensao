@@ -1,5 +1,3 @@
-const bolinhasSlider = document.querySelector('.swiper-pagination').style.color = 'white';
-
 // Tirando a seta no modo mobile
 function tirarElementosDaPagina(){
     const larguraDaJanela = window.innerWidth;
@@ -89,72 +87,38 @@ const myObserver = new IntersectionObserver((entries) => {
 
 conteudos.forEach((conteudo) => myObserver.observe(conteudo));
 
-// ------------------ SLIDE 1 ------------------
-const titulo = document.querySelector(".titulo-header");
+const tempoPostado = document.querySelectorAll(".tempoPostagem");
 
+tempoPostado.forEach((tempo) => {
+    tempo.style.color = "#000000a6";
+})
+
+
+const titulo = document.querySelector(".titulo-header");
 if(titulo.innerHTML == "Projeto de Extensão"){
     const tempoPost1HTML = document.querySelector(".tempoDecorrido1");
-    let dataPost1 = "2023-09-09T15:47:00";
+    let dataPost1 = "2023-08-27T15:47:00";
     let tempoPassadoPost1 = calcularTempoPassado(dataPost1);
     tempoPost1HTML.innerHTML = tempoPassadoPost1;
 
 
     const tempoPost2HTML = document.querySelector(".tempoDecorrido2");
-    let dataPost2 = "2023-09-20T21:43:00";
+    let dataPost2 = "2023-09-18T21:43:00";
     let tempoPassadoPost2 = calcularTempoPassado(dataPost2);
     tempoPost2HTML.innerHTML = tempoPassadoPost2;
 
 }else if (titulo.innerHTML == "Grupo C") {
 
     const tempoPost1HTML = document.querySelector(".tempoDecorrido1");
-    let dataPost1 = "2023-09-09T15:47:00";
+    let dataPost1 = "2023-08-27T15:47:00";
     let tempoPassadoPost1 = calcularTempoPassado(dataPost1);
     tempoPost1HTML.innerHTML = tempoPassadoPost1;
 
 } else if (titulo.innerHTML == "Grupo B") {
 
     const tempoPost2HTML = document.querySelector(".tempoDecorrido2");
-    let dataPost2 = "2023-09-20T21:43:00";
+    let dataPost2 = "2023-09-18T21:43:00";
     let tempoPassadoPost2 = calcularTempoPassado(dataPost2);
     tempoPost2HTML.innerHTML = tempoPassadoPost2;
 
-}
-
-
-function criaConteudo(imagens, botaoPrev, botaoNext, btnMobilePrev, btnMobileNext) {
-    let currentSlide = 0;
-
-    function hideSlider() {
-        imagens.forEach(item => item.classList.remove('on'));
-    };
-
-    function showSlider() {
-        imagens[currentSlide].classList.add('on');
-    };
-
-    function nextSlider() {
-        hideSlider();
-        if (currentSlide === imagens.length - 1) {
-            currentSlide = 0;
-        } else {
-            currentSlide++;
-        }
-        showSlider();
-    };
-
-    function prevSlider() {
-        hideSlider();
-        if (currentSlide === 0) {
-            currentSlide = imagens.length - 1;
-        } else {
-            currentSlide--;
-        }
-        showSlider();
-    };
-
-    botaoNext.addEventListener('click', nextSlider);
-    botaoPrev.addEventListener('click', prevSlider);
-
-    btnMobilePrev.addEventListener('click', prevSlider);
-    btnMobileNext.addEventListener('click', nextSlider);
 }
