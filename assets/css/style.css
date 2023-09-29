@@ -271,6 +271,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: "nome assunto tempo";
+    min-height: 45px;
 }
 
 .nome-grupo {
