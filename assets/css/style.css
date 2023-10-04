@@ -374,12 +374,6 @@ section {
     left: 20px;
 }
 
-.imagem-introducao {
-    height: 25vh;
-    width: 40vw;
-    object-fit: cover;
-}
-
 .div-introducao {
     display: flex;
     justify-content: space-around;
