@@ -343,7 +343,7 @@ section {
 }
 
 :root {
-    --cor-primaria: #f8fafc;
+    --cor-primaria: #f1f5f9;
     --cor-secundario: #f8fafc;
     /* --cor-cinza: #a5a5a57a; */
     --cor-cinza: #e2e8f08c;
@@ -413,7 +413,16 @@ html {
 }
 
 body {
-    margin-bottom: 250px;
+    margin-bottom: 200px;
+}
+.footer{
+    height: 5v;
+    position:absolute;
+    bottom: 0px;
+}
+
+.container, .row{
+    padding: 0;
 }
 
 footer {
