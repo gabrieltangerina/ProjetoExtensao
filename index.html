@@ -5,107 +5,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Extensão</title>
+    <script src="https://use.fontawesome.com/8edf9be74d.js"></script>
     <link rel="shortcut icon" href="assets/imagens/faviconIFSP.png" type="image/x-icon">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald:wght@200;300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@100;300;400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500&family=Open+Sans:wght@300;400;500&family=Roboto:wght@100;300;400;500&display=swap"rel="stylesheet">
 
     <!-- PARA USAR O CARROSEL  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <header id="header">
-        <a href="index.html" id="link-logo">
-            <img src="assets/imagens/IFSP-VTP-Logo-Color-2 (IF-Apenas).png" alt="Logo IFSP" srcset="" id="imagem-logo">
-        </a>
-        <h2 class="titulo-header">Projeto de Extensão</h2>
-        <nav id="nav">
-            <button id="btn-mobile">
-                <span class="material-symbols-outlined">
-                    menu
-                </span>
-            </button>
-            <ul id="menu">
-                <li><a href="GrupoA.html">Grupo A</a></li>
-                <li><a href="GrupoB.html">Grupo B</a></li>
-                <li><a href="GrupoC.html">Grupo C</a></li>
-                <li><a href="GrupoD.html">Grupo D</a></li>
-                <li><a href="GrupoE.html">Grupo E</a></li>
-                <li><a href="GrupoF.html">Grupo F</a></li>
-                <li><a href="TodosGrupos.html">Todos os grupos</a></li>
-            </ul>
+    <div class="introducao-site">
+        <div class="div-cabecalho">
+            <header id="header">
+                <a href="index.html" id="link-logo">
+                    <img src="assets/imagens/IFSP-VTP-Logo-Color-2 (IF-Apenas).png" alt="Logo IFSP" srcset=""
+                        id="imagem-logo">
+                </a>
+                <h2 class="titulo-header titulo-pagina">Projeto de Extensão</h2>
+                <nav id="nav">
+                    <button id="btn-mobile">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </button>
+                    <ul id="menu">
+                        <li><a href="GrupoA.html">Grupo A</a></li>
+                        <li><a href="GrupoB.html">Grupo B</a></li>
+                        <li><a href="GrupoC.html">Grupo C</a></li>
+                        <li><a href="GrupoD.html">Grupo D</a></li>
+                        <li><a href="GrupoE.html">Grupo E</a></li>
+                        <li><a href="GrupoF.html">Grupo F</a></li>
+                        <li id="todosGrupos"><a href="TodosGrupos.html">Todos os grupos</a></li>
+                    </ul>
+                </nav>
+        </div>
+        <div class="div-introducao">
+            <div class="texto-introducao">
+                <h3>Sobre o Projeto</h3>
+                <p>
+                    O projeto visa oferecer à comunidade oportunidades de aprendizado gratuito e de qualidade
+                    ao mesmo tempo que instiga os alunos da graduação à melhorarem suas técnicas de aprendizado
+                    e ensino.
+                </p>
+            </div>
+            <img src="assets/imagens/LogoVertical.png" alt="" srcset="" class="imagem-introducao">
+        </div>
+        </header>
+        <nav>
+            <div class="container">
+                <a href="GrupoA.html" class="item">
+                    <div class="grupoA">
+                        <div class="parte1">
+                            <h3 class="titulo-lista-grupos">Grupo A</h3>
+                            <p class="texto-lista">Palestras Lógicas para Jogos.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="GrupoB.html" class="item">
+                    <div class="grupoB">
+                        <h3 class="titulo-lista-grupos">Grupo B</h3>
+                        <p class="texto-lista">Mini-curso de Introdução a Informática.</p>
+                    </div>
+                </a>
+                <a href="GrupoC.html" class="item">
+                    <div class="grupoC">
+                        <h3 class="titulo-lista-grupos">Grupo C</h3>
+                        <p class="texto-lista">Oficinas de Introdução a Plataformas Virtuais.</p>
+                    </div>
+                </a>
+                <a href="GrupoD.html" class="item">
+                    <div class="grupoD">
+                        <h3 class="titulo-lista-grupos">Grupo D</h3>
+                        <p class="texto-lista">Palestra sobre Lógica de Programação.</p>
+                    </div>
+                </a>
+                <a href="GrupoE.html" class="item">
+                    <div class="grupoE">
+                        <h3 class="titulo-lista-grupos">Grupo E</h3>
+                        <p class="texto-lista">Introdução ao Desenvolvimento Web.</p>
+                    </div>
+                </a>
+                <a href="GrupoF.html" class="item">
+                    <div class="grupoF">
+                        <h3 class="titulo-lista-grupos">Grupo F</h3>
+                        <p class="texto-lista">Curso Online de Introdução a Linguagem de Programação OCaml.</p>
+                    </div>
+                </a>
+                <a href="TodosGrupos.html" class="item">
+                    <div class="todosGrupos">
+                        <h3 class="titulo-lista-grupos">Todos os Grupos</h3>
+                    </div>
+                </a>
+            </div>
         </nav>
-    </header>
-    <nav>
-        <div class="atalhos">
-            <a href="TodosGrupos.html">
-                <span class="material-symbols-outlined icones-atalhos">arrow_left_alt</span>
-            </a>
-            <a href="index.html">
-                <span class="material-symbols-outlined icones-atalhos">home</span>
-            </a>
-            <a href="GrupoA.html">
-                <span class="material-symbols-outlined icones-atalhos">arrow_right_alt</span>
-            </a>
-        </div>
-        <div class="lista-grupos">
-            <a href="GrupoA.html" class="link-grupos-lista">
-                <div class="grupoA div-grupos-lista">
-                    <h3 class="titulo-lista-grupos">Grupo A</h3>
-                    <p class="texto-lista">Palestras Lógicas para Jogos.</p>
-                </div>
-            </a>
-            <a href="GrupoB.html" class="link-grupos-lista">
-                <div class="grupoB div-grupos-lista">
-                    <h3 class="titulo-lista-grupos">Grupo B</h3>
-                    <p class="texto-lista">Mini-curso de Introdução a Informática.</p>
-                </div>
-            </a>
-            <a href="GrupoC.html" class="link-grupos-lista">
-                <div class="grupoC div-grupos-lista">
-                    <h3 class="titulo-lista-grupos">Grupo C</h3>
-                    <p class="texto-lista">Oficinas de Introdução a Plataformas Virtuais.</p>
-                </div>
-            </a>
-            <a href="GrupoD.html" class="link-grupos-lista">
-                <div class="grupoD div-grupos-lista">
-                    <h3 class="titulo-lista-grupos">Grupo D</h3>
-                    <p class="texto-lista">Palestra sobre Lógica de Programação.</p>
-                </div>
-            </a>
-            <a href="GrupoE.html" class="link-grupos-lista">
-                <div class="grupoE div-grupos-lista">
-                    <h3 class="titulo-lista-grupos">Grupo E</h3>
-                    <p class="texto-lista">Introdução ao Desenvolvimento Web.</p>
-                </div>
-            </a>
-            <a href="GrupoF.html" class="link-grupos-lista">
-                <div class="grupoF div-grupos-lista">
-                    <h3 class="titulo-lista-grupos">Grupo F</h3>
-                    <p class="texto-lista">Curso Online de Introdução a Linguagem de Programação OCaml.</p>
-                </div>
-            </a>
-            <a href="TodosGrupos.html" class="link-grupos-lista">
-                <div class="todosgrupos div-grupos-lista">
-                    <h3 class="titulo-lista-grupos">Todos os grupos</h3>
-                </div>
-            </a>
-        </div>
-    </nav>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#e2e8f08c" fill-opacity="1" 
+            d="M0,128L48,138.7C96,149,192,171,288,181.3C384,192,480,192,576,181.3C672,171,768,149,864,154.7C960,160,1056,192,1152,192C1248,192,1344,160,1392,144L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+        </path>
+    </svg>
     <div class="div-postagens-recentes">
         <h3 class="titulo-postagens-recentes">Postagens recentes</h3>
     </div>
@@ -127,25 +134,28 @@
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper" style="height: auto;">
                             <div class="swiper-slide">
-                                <img src="assets/imagens/GrupoA/Imagem1.JPG" alt="">
+                                <img src="assets/imagens/GrupoA/Foto (1).jpeg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/imagens/GrupoA/Imagem2.JPG" alt="">                            
+                                <img src="assets/imagens/GrupoA/Foto (2).jpeg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/imagens/GrupoA/Imagem3.JPG" alt="">                            
+                                <img src="assets/imagens/GrupoA/Foto (3).jpeg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/imagens/GrupoA/Imagem4.JPG" alt="">                            
+                                <img src="assets/imagens/GrupoA/Foto (4).jpeg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/imagens/GrupoA/Imagem5.JPG" alt="">                            
+                                <img src="assets/imagens/GrupoA/Foto (7).jpeg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/imagens/GrupoA/Imagem6.JPG" alt="">                            
+                                <img src="assets/imagens/GrupoA/Foto (8).jpeg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/imagens/GrupoA/Imagem7.JPG" alt="">                            
+                                <img src="assets/imagens/GrupoA/Foto (9).jpeg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/imagens/GrupoA/Foto (12).jpeg" alt="">
                             </div>
                         </div>
                         <div class="swiper-button-next"></div>
@@ -155,8 +165,9 @@
                 </div>
                 <div class="conteudo-texto">
                     <p class="texto-conteudo">
-                        No dia <strong>27/03</strong>, o grupo A deu uma palestra sobre Tecnologia e Programação para o 3º ano da escola Enny e também uma oficina com o jogo/linguagem Scratch, mostrando por meio de exercícios o básico da programação.                  
-                      </p>
+                        No dia <strong>27/03</strong>, o grupo A deu uma palestra sobre Tecnologia e Programação para o
+                        3º ano da escola Enny e também uma oficina com o jogo/linguagem Scratch, mostrando por meio de
+                        exercícios o básico da programação. </p>
                 </div>
             </div>
         </section>
@@ -168,18 +179,22 @@
                         <a href="GrupoF.html" class="link-grupo">Grupo F</a>
                     </p>
                     <p class="assunto">
-                        Instalação do ambiente de desenvolvimento OCaml       
-                     </p>
+                        Curso sobre OCaml - Aula 1
+                    </p>
                     <p class="tempoPostagem tempoDecorrido1">
                         <!-- TEMPO DESDE A POSTAGEM DO POST -->
                     </p>
                 </div>
                 <div class="conteudo-slider">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VkU6Ml1Hi4A?si=3a5CFHG29n5XwrYt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VkU6Ml1Hi4A?si=3a5CFHG29n5XwrYt"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="conteudo-texto">
                     <p class="texto-conteudo">
-                        - Documentação da Instalação do ambiente de desenvolvimento OCaml: <a href="https://ocaml.org/install" target="_blank" class="links">https://ocaml.org/install</a>
+                        - Documentação da Instalação do ambiente de desenvolvimento OCaml: <a
+                            href="https://ocaml.org/install" target="_blank" class="links">https://ocaml.org/install</a>
                     </p>
                 </div>
             </div>
@@ -274,16 +289,16 @@
                                 <img src="assets/imagens/GrupoC/IMG-20230901-WA0063.jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/imagens/GrupoC/IMG-20230901-WA0064.jpg" alt="">                            
+                                <img src="assets/imagens/GrupoC/IMG-20230901-WA0064.jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/imagens/GrupoC/IMG-20230901-WA0065.jpg" alt="">                            
+                                <img src="assets/imagens/GrupoC/IMG-20230901-WA0065.jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/imagens/GrupoC/IMG-20230901-WA0069.jpg" alt="">                            
+                                <img src="assets/imagens/GrupoC/IMG-20230901-WA0069.jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/imagens/GrupoC/IMG-20230901-WA0072.jpg" alt="">                            
+                                <img src="assets/imagens/GrupoC/IMG-20230901-WA0072.jpg" alt="">
                             </div>
                         </div>
                         <div class="swiper-button-next"></div>
@@ -293,14 +308,32 @@
                 </div>
                 <div class="conteudo-texto">
                     <p class="texto-conteudo">
-                        No dia <strong>23/08</strong>, foram ministradas aulas de inglês básico e introdução ao PowerPoint. Durante as aulas, foi abordada a conversação em língua inglesa e as ferramentas disponíveis na página inicial do software. As aulas foram realizadas no Lar Frei Arnaldo, com os integrantes do clube de robótica local como alunos.                    
+                        No dia <strong>23/08</strong>, foram ministradas aulas de inglês básico e introdução ao
+                        PowerPoint. Durante as aulas, foi abordada a conversação em língua inglesa e as ferramentas
+                        disponíveis na página inicial do software. As aulas foram realizadas no Lar Frei Arnaldo, com os
+                        integrantes do clube de robótica local como alunos.
                     </p>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h5 ><i class="fa-solid fa-thumbtack"></i> IFSP-VTP </h5>
+                    <ul class="nav">
+                        <!-- <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-github fa-lg"></i></a></li> 
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li> -->
+                    </ul>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </footer>    
+
     <script src="assets/script/script.js"></script>
-    
+
     <!-- PARA USAR O CARROSEL  -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
@@ -324,3 +357,4 @@
 </body>
 
 </html>
+<script src="assets/script/script.js"></script>

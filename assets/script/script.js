@@ -1,10 +1,10 @@
 // Tirando a seta no modo mobile
-function tirarElementosDaPagina(){
+function tirarElementosDaPagina() {
     const larguraDaJanela = window.innerWidth;
 
     const tamanhoCelular = 655;
 
-    if(larguraDaJanela <= tamanhoCelular){
+    if (larguraDaJanela <= tamanhoCelular) {
         const setasNext = document.querySelectorAll(".swiper-button-next");
         const setasPrev = document.querySelectorAll(".swiper-button-prev");
 
@@ -16,24 +16,39 @@ function tirarElementosDaPagina(){
             seta.style.display = 'none';
         })
 
-    }else{
+    } else {
         const setasNext = document.querySelectorAll(".swiper-button-next");
         const setasPrev = document.querySelectorAll(".swiper-button-prev");
 
-        setasNext.forEach(seta =>{
+        setasNext.forEach(seta => {
             seta.style.display = 'flex';
         })
 
-        setasPrev.forEach(seta =>{
+        setasPrev.forEach(seta => {
             seta.style.display = 'flex';
         })
+
+        window.addEventListener('load', adicioanarUnderline());
     }
 
 
 }
 
-tirarElementosDaPagina();
-window.addEventListener('resize', tirarElementosDaPagina);
+window.addEventListener('resize', tirarElementosDaPagina());
+
+// Tirando o menu da tela principal
+function tirarMenu(){
+    const tituloPagina = document.querySelector('.titulo-pagina');
+    const menu = document.querySelector('#nav');
+    const iconeIF = document.querySelector('#imagem-logo');
+
+    if (tituloPagina.innerHTML == "Projeto de Extensão") {
+        menu.style.display = 'none';
+        iconeIF.style.display = 'none';
+    }
+}
+
+window.addEventListener('load', tirarMenu());
 
 
 // ------------ Menu Hamburguer ----------------
@@ -58,3 +73,23 @@ const myObserver = new IntersectionObserver((entries) => {
 });
 
 conteudos.forEach((conteudo) => myObserver.observe(conteudo));
+
+const setasNext = document.querySelectorAll('.swiper-button-next');
+const setasPrev = document.querySelectorAll('.swiper-button-prev');
+const bolinhas = document.querySelectorAll('.swiper-pagination-bullet');
+
+setasNext.forEach((seta) => seta.style.color = "#e7e7e7");
+setasPrev.forEach((seta) => seta.style.color = "#e7e7e7");
+
+// Adicionando a efeito underline para a página atual
+function adicioanarUnderline(){
+    const tituloPagina = document.querySelector('.titulo-pagina');
+    const nomesGrupos = document.querySelectorAll('.nome-menu');
+
+    nomesGrupos.forEach((e) => {
+        if(e.innerHTML == tituloPagina.innerHTML){
+            e.style.boxShadow = '0px 4px 0px 0px var(--cor-hover)';
+        }
+    })
+}
+

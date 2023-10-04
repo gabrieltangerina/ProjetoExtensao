@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo F</title>
+    <title>Grupo A</title>
     <link rel="shortcut icon" href="assets/imagens/faviconIFSP.png" type="image/x-icon">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- ICONE HAMBURGUER -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald:wght@200;300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@100;300;400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500&family=Open+Sans:wght@300;400;500&family=Roboto:wght@100;300;400;500&display=swap"rel="stylesheet">
 
     <!-- PARA USAR O CARROSEL  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
@@ -22,68 +26,39 @@
 </head>
 
 <body>
-    <header id="header">
-        <a href="index.html" id="link-logo">
-            <img src="assets/imagens/IFSP-VTP-Logo-Color-2 (IF-Apenas).png" alt="" srcset="" id="imagem-logo">
-        </a>
-        <h2 class="titulo-header">Grupo F</h2>
-        <nav id="nav">
-            <button id="btn-mobile">
-                <span class="material-symbols-outlined">
-                    menu
-                </span>
-            </button>
-            <ul id="menu">
-                <li><a href="GrupoA.html">Grupo A</a></li>
-                <li><a href="GrupoB.html">Grupo B</a></li>
-                <li><a href="GrupoC.html">Grupo C</a></li>
-                <li><a href="GrupoD.html">Grupo D</a></li>
-                <li><a href="GrupoE.html">Grupo E</a></li>
-                <li><a href="GrupoF.html">Grupo F</a></li>
-                <li><a href="TodosGrupos.html">Todos os grupos</a></li>
-            </ul>
-        </nav>
-    </header>
-    <nav>
-        <div class="atalhos">
-            <a href="GrupoE.html">
-                <span class="material-symbols-outlined icones-atalhos">arrow_left_alt</span>
-            </a>
-            <a href="index.html">
-                <span class="material-symbols-outlined icones-atalhos">home</span>
-            </a>
-            <a href="TodosGrupos.html">
-                <span class="material-symbols-outlined icones-atalhos">arrow_right_alt</span>
-            </a>
-        </div>
-    </nav>
-    <main>
-        <div class="conteudo-grupo">
-            <div class="participantes">
-                <h3 class="titulo-grupo">Participantes</h3>
-                <div class="informacoes-grupo">
-                    <p>Ravi Vendramini De Almeida</p>
-                    <p>Josué Teodoro Moreira</p>
-                    <p>Guilherme Grigolin</p>
-                    <p>Gustavo Bizo Jardim</p>
-                    <p>Rafael Callegari De Oliveira</p>
-                    <p>Marcius Gabriel Scriboni Da Costa Arantes</p>
-                </div>
+    <div class="introducao-site">
+        <header id="header">
+            <div class="conteudo-header">
+                <a href="index.html" id="link-logo">
+                    <img src="assets/imagens/IFSP-VTP-Logo-Color-2 (IF-Apenas).png" alt="" srcset="" id="imagem-logo">
+                </a>
+                <nav id="nav">
+                    <button id="btn-mobile">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </button>
+                    <ul id="menu">
+                        <li><a href="index.html" class="nome-menu">Início</a></li>
+                        <li><a href="GrupoA.html" class="nome-menu">Grupo A</a></li>
+                        <li><a href="GrupoB.html" class="nome-menu">Grupo B</a></li>
+                        <li><a href="GrupoC.html" class="nome-menu">Grupo C</a></li>
+                        <li><a href="GrupoD.html" class="nome-menu">Grupo D</a></li>
+                        <li><a href="GrupoE.html" class="nome-menu">Grupo E</a></li>
+                        <li><a href="GrupoF.html" class="nome-menu">Grupo F</a></li>
+                        <li><a href="TodosGrupos.html" class="nome-menu">Todos os Grupos</a></li>
+                    </ul>
+                </nav>    
             </div>
-            <div class="separacao"></div>
-            <div class="projeto">
-                <h3 class="titulo-grupo">Curso Online de Introdução a Linguagem de Programação OCaml</h3>
-                <div class="informacoes-projeto">
-                    <p>
-                        O curso de Introdução a programação funcional com OCaml tem como objetivo incentivar a
-                        resolução de problemas computacionais de forma declarativa e incitar a familiaridade com
-                        conceitos de programação funcional, prezando por clareza no código, utilização de design
-                        patterns e decomposição de problemas em pequenas soluções.<br>O curso é disponibilizado
-                        gratuitamente no Youtube para que todos com acesso a internet e um computador possam consumir o
-                        conteúdo de forma simples.
-                    </p>
-                </div>
-            </div>
+        </header>
+    </div>
+    <div class="wave-fundo">
+
+    </div>
+    <div class="apresentacao-grupo">
+        <div class="texto-introducao-grupo">
+            <h1 class="titulo-pagina">Grupo F</h1>
+            <h3>Curso Online de Introdução a Linguagem de Programação OCaml</h3>
         </div>
         <div class="conteudo-grupo-mobile">
             <div class="informacoes-mobile">
@@ -95,25 +70,25 @@
                     <p>Guilherme Grigolin</p>
                     <p>Gustavo Bizo Jardim</p>
                     <p>Rafael Callegari De Oliveira</p>
-                    <p>Marcius Gabriel Scriboni Da Costa Arantes
-                    <p>
+                    <p>Marcius Gabriel Scriboni Da Costa Arantes</p>
                 </div>
                 <div class="separacao-mobile"></div>
-                <h3 class="titulo-grupo-mobile2">Curso Online de Introdução a Programação Object Camion</h3>
+                <h3 class="titulo-grupo-mobile2">Sobre</h3>
                 <div class="informacoes-projeto-mobile">
                     <p>
                         Curso OCaml:
                         - O curso de Introdução a programação funcional com OCaml tem como objetivo incentivar a
                         resolução de problemas computacionais de forma declarativa e incitar a familiaridade com
                         conceitos de programação funcional, prezando por clareza no código, utilização de design
-                        patterns e decomposição de problemas em pequenas soluções. O curso é disponibilizado
+                        patterns e decomposição de problemas em pequenas soluções. <br>O curso é disponibilizado
                         gratuitamente no Youtube para que todos com acesso a internet e um computador possam consumir o
                         conteúdo de forma simples.
                     </p>
                 </div>
             </div>
         </div>
-
+    </div>
+    <main>
         <section class="hidden">
             <div class="conteudo">
                 <div class="topo-conteudo">
@@ -121,28 +96,29 @@
                         <a href="GrupoF.html" class="link-grupo">Grupo F</a>
                     </p>
                     <p class="assunto">
-                        Instalação do ambiente de desenvolvimento OCaml               
-                     </p>
+                        Curso sobre OCaml - Aula 1
+                    </p>
                     <p class="tempoPostagem tempoDecorrido1">
                         <!-- TEMPO DESDE A POSTAGEM DO POST -->
                     </p>
                 </div>
                 <div class="conteudo-slider">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VkU6Ml1Hi4A?si=3a5CFHG29n5XwrYt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VkU6Ml1Hi4A?si=3a5CFHG29n5XwrYt"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="conteudo-texto">
                     <p class="texto-conteudo">
-                        - Documentação da Instalação do ambiente de desenvolvimento OCaml: <a href="https://ocaml.org/install" target="_blank" class="links" >https://ocaml.org/install</a>
+                        - Documentação da Instalação do ambiente de desenvolvimento OCaml: <a
+                            href="https://ocaml.org/install" target="_blank" class="links">https://ocaml.org/install</a>
                     </p>
                 </div>
             </div>
         </section>
 
-
     </main>
-    <footer>
 
-    </footer>
     <script src="assets/script/script.js"></script>
 
     <!-- PARA USAR O CARROSEL  -->

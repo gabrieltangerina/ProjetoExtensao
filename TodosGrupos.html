@@ -6,214 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupos</title>
     <link rel="shortcut icon" href="assets/imagens/faviconIFSP.png" type="image/x-icon">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- ICONE HAMBURGUER -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald:wght@200;300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500&family=Open+Sans:wght@300;400;500&family=Roboto:wght@100;300;400;500&display=swap"rel="stylesheet">
+    
 </head>
-
 <body>
-    <header id="header">
-        <a href="index.html" id="link-logo">
-            <img src="assets/imagens/IFSP-VTP-Logo-Color-2 (IF-Apenas).png" alt="" srcset="" id="imagem-logo">
-        </a>
-        <h2 class="titulo-header">Todos os grupos</h2>
-        <nav id="nav">
-            <button id="btn-mobile">
-                <span class="material-symbols-outlined">
-                    menu
-                </span>
-            </button>
-            <ul id="menu">
-                <li><a href="GrupoA.html">Grupo A</a></li>
-                <li><a href="GrupoB.html">Grupo B</a></li>
-                <li><a href="GrupoC.html">Grupo C</a></li>
-                <li><a href="GrupoD.html">Grupo D</a></li>
-                <li><a href="GrupoE.html">Grupo E</a></li>
-                <li><a href="GrupoF.html">Grupo F</a></li>
-                <li><a href="TodosGrupos.html">Todos os grupos</a></li>
-            </ul>
-        </nav>
-    </header>
-    <nav>
-        <div class="atalhos">
-            <a href="GrupoF.html">
-                <span class="material-symbols-outlined icones-atalhos">arrow_left_alt</span>
-            </a>
-            <a href="index.html">
-                <span class="material-symbols-outlined icones-atalhos">home</span>
-            </a>
-            <a href="index.html">
-                <span class="material-symbols-outlined icones-atalhos">arrow_right_alt</span>
-            </a>
+    <div class="introducao-site">
+        <header id="header">
+            <div class="conteudo-header">
+                <a href="index.html" id="link-logo">
+                    <img src="assets/imagens/IFSP-VTP-Logo-Color-2 (IF-Apenas).png" alt="" srcset="" id="imagem-logo">
+                </a>
+                <nav id="nav">
+                    <button id="btn-mobile">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </button>
+                    <ul id="menu">
+                        <li><a href="index.html" class="nome-menu">Início</a></li>
+                        <li><a href="GrupoA.html" class="nome-menu">Grupo A</a></li>
+                        <li><a href="GrupoB.html" class="nome-menu">Grupo B</a></li>
+                        <li><a href="GrupoC.html" class="nome-menu">Grupo C</a></li>
+                        <li><a href="GrupoD.html" class="nome-menu">Grupo D</a></li>
+                        <li><a href="GrupoE.html" class="nome-menu">Grupo E</a></li>
+                        <li><a href="GrupoF.html" class="nome-menu">Grupo F</a></li>
+                        <li><a href="TodosGrupos.html" class="nome-menu">Todos os Grupos</a></li>
+                    </ul>
+                </nav>    
+            </div>
+        </header>
+    </div>
+    <div class="wave-fundo">
+
+    </div>
+    <div class="apresentacao-grupo">
+        <div class="texto-introducao-grupo">
+            <h1 class="titulo-pagina">Todos os Grupos</h1>
         </div>
-    </nav>
+    </div>
     <main>
-        <div class="conteudo-grupo">
-            <div class="participantes">
-                <h3 class="titulo-grupo">Participantes - Grupo A</h3>
-                <div class="informacoes-grupo">
-                    <p>João Pedro Dos Santos Souza</p>
-                    <p>Breno De Lima Candeu</p>
-                    <p>Riquelme Furlan Luis</p>
-                    <p>Gustavo De Castro Pacheco</p>
-                    <p>Lucas Honorato Benetti</p>
-                    <p>Felipe Dos Santos Moreira</p>
-                    <p>Ian Santos Nascimento</p>
-                </div>
-            </div>
-            <div class="separacao"></div>
-            <div class="projeto">
-                <h3 class="titulo-grupo"> Palestras Lógicas para Jogos</h3>
-                <div class="informacoes-projeto">
-                    <p>
-                        <!-- INFORMAÇÕES DO GRUPO -->
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="conteudo-grupo">
-            <div class="participantes">
-                <h3 class="titulo-grupo">Participantes - Grupo B</h3>
-                <div class="informacoes-grupo">
-                    <p>Micheli Magalhaes Corsino</p>
-                    <p>Matheus Selis Soares</p>
-                    <p>Gustavo Gazola Ancete</p>
-                    <p>Carlos Eduardo Teles Dos Santos</p>
-                    <p>Davi Dos Santos Lopes</p>
-                    <p>Mariana Keiko Araquam Morota</p>
-                </div>
-            </div>
-            <div class="separacao"></div>
-            <div class="projeto">
-                <h3 class="titulo-grupo">Mini-curso de Introdução a Informática</h3>
-                <div class="informacoes-projeto">
-                    <p>
-                        Nosso projeto de extensão trata-se de um minicurso de introdução à informática para os alunos do projeto matutino, que estão entre o 4º e o 5º ano, da escola Cem Profª. Maria Martins e Lourenço, localizada no bairro Pozzobon. <br> <br>
-
-                        O objetivo central de nossa proposta é capacitar crianças que atualmente não possuem acesso ou possuem acesso de forma limitada ao computador e são carentes de conhecimentos básicos de informática e tecnologia. Essa lacuna de conhecimento pode acarretar dificuldades na realização de tarefas simples no futuro, limitando suas oportunidades e o acesso a um mundo cada vez mais digitalizado e tecnológico. <br> <br>
-                        
-                        Nossa iniciativa visa oferecer um minicurso abrangente, ministrado por alunos empenhados em ensinar as crianças os conceitos fundamentais sobre o uso do computador, bem como conhecimentos básicos sobre as peças e a internet. <br> <br>
-                        
-                        Portanto, nosso projeto de extensão busca ser uma ponte para um futuro mais inclusivo e promissor para essas crianças, proporcionando-lhes uma base sólida de conhecimentos e habilidades que poderão impulsionar suas vidas de forma significativa. <br> <br>
-                        
-                        Acreditamos que, por meio da educação e da tecnologia, poderemos ajudá-las a superar barreiras e construir um futuro com melhores oportunidades. <br> <br> 
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="conteudo-grupo">
-            <div class="participantes">
-                <h3 class="titulo-grupo">Participantes - Grupo C</h3>
-                <div class="informacoes-grupo">
-                    <p>João Pedro Gomes Brigati</p>
-                    <p>Maria Laura Passos Motta</p>
-                    <p>Lucas Magnani Melo</p>
-                    <p>Izadora Macedo da Silva</p>
-                    <p>Marcelo Henrique Favaro</p>
-                    <p>Camila Rocha Ribeiro</p>
-                    <p>Guilherme Matheus de Souza</p>
-                </div>
-            </div>
-            <div class="separacao"></div>
-            <div class="projeto">
-                <h3 class="titulo-grupo">Oficinas de Instrodução a Plataformas Virtuais</h3>
-                <div class="informacoes-projeto">
-                    <p>
-                        O <strong>Multiskills</strong> é um projeto educacional dedicado a ensinar o funcionamento de
-                        softwares cotidianos, capacitando os alunos não apenas a dominar essas ferramentas, mas também a
-                        adquirir habilidades que lhes permitam explorar e compreender autonomamente uma ampla gama de
-                        programas similares, fortalecendo, assim, sua participação ativa na sociedade digital em
-                        constante evolução. <br>Em resumo o objetivo do projeto é democratizar o conhecimento sobre
-                        tecnologias variadas para crianças e adolescentes. <br> <br>
-                        Aulas : Lógica de Programação,
-                        Edição de Imagens,
-                        Inglês,
-                        Introdução ao PowerPoint.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="conteudo-grupo">
-            <div class="participantes">
-                <h3 class="titulo-grupo">Participantes - Grupo D</h3>
-                <div class="informacoes-grupo">
-                    <p>Erick Alves Carlos Pontes</p>
-                    <p>Flávia Alessandra Vitório Figueiredo</p>
-                    <p>Allyson Vinicius Paulino Chagas</p>
-                    <p>Caio Abreu Pereira</p>
-                    <p>Samuel Damasceno Cardoso</p>
-                </div>
-            </div>
-            <div class="separacao"></div>
-            <div class="projeto">
-                <h3 class="titulo-grupo">Palestra sobre Lógica de Programação</h3>
-                <div class="informacoes-projeto">
-                    <p>
-                        <!-- INFORMAÇÕES DO GRUPO -->
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="conteudo-grupo">
-            <div class="participantes">
-                <h3 class="titulo-grupo">Participantes - Grupo E</h3>
-                <div class="informacoes-grupo">
-                    <p>Letícia Alves De Oliveira</p>
-                    <p>Barbara Amanda Fialho De Souza</p>
-                    <p>Maria Luiza Elidio Castro</p>
-                    <p>Maria Beatriz Taveira Alves Silva</p>
-                    <p>Rebecka Leite Teodoro</p>
-                    <p>Eloisy Monique Moreira</p>
-                    <p>Gustavo Lemos da Silva</p>
-                </div>
-            </div>
-            <div class="separacao"></div>
-            <div class="projeto">
-                <h3 class="titulo-grupo">Instrodução ao Desenvolvimento Web</h3>
-                <div class="informacoes-projeto">
-                    <p>
-                        <!-- INFORMAÇÕES DO GRUPO -->
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="conteudo-grupo">
-            <div class="participantes">
-                <h3 class="titulo-grupo">Participantes - Grupo F</h3>
-                <div class="informacoes-grupo">
-                    <p>Ravi Vendramini De Almeida</p>
-                    <p>Josué Teodoro Moreira</p>
-                    <p>Guilherme Grigolin</p>
-                    <p>Gustavo Bizo Jardim</p>
-                    <p>Rafael Callegari De Oliveira</p>
-                    <p>Marcius Gabriel Scriboni Da Costa Arantes</p>
-                </div>
-            </div>
-            <div class="separacao"></div>
-            <div class="projeto">
-                <h3 class="titulo-grupo">Curso Online de Introdução a Linguagem de Programação OCaml</h3>
-                <div class="informacoes-projeto">
-                    <p>
-                        Curso OCaml:
-                        - O curso de Introdução a programação funcional com OCaml tem como objetivo incentivar a
-                        resolução de problemas computacionais de forma declarativa e incitar a familiaridade com
-                        conceitos de programação funcional, prezando por clareza no código, utilização de design
-                        patterns e decomposição de problemas em pequenas soluções. <br>O curso é disponibilizado
-                        gratuitamente no Youtube para que todos com acesso a internet e um computador possam consumir o
-                        conteúdo de forma simples.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Conteudo Grupo Mobile -->
-        <div class="conteudo-grupo-mobile">
+        <div class="conteudo-grupo-mobile conteudo-grupo-mobile-todos-grupos">
             <div class="informacoes-mobile">
-                <h3 class="titulo-grupo-mobile">Participantes</h3>
+                <h3 class="titulo-grupo-mobile">Grupo A</h3>
                 <div class="separacao-mobile"></div>
                 <div class="informacoes-grupo-mobile">
                     <p>João Pedro Dos Santos Souza</p>
@@ -233,9 +79,9 @@
                 </div>
             </div>
         </div>
-        <div class="conteudo-grupo-mobile">
+        <div class="conteudo-grupo-mobile  conteudo-grupo-mobile-todos-grupos">
             <div class="informacoes-mobile">
-                <h3 class="titulo-grupo-mobile">Participantes</h3>
+                <h3 class="titulo-grupo-mobile">Grupo B</h3>
                 <div class="separacao-mobile"></div>
                 <div class="informacoes-grupo-mobile">
                     <p>Micheli Magalhaes Corsino</p>
@@ -261,9 +107,9 @@
                 </div>
             </div>
         </div>
-        <div class="conteudo-grupo-mobile">
+        <div class="conteudo-grupo-mobile  conteudo-grupo-mobile-todos-grupos">
             <div class="informacoes-mobile">
-                <h3 class="titulo-grupo-mobile">Participantes</h3>
+                <h3 class="titulo-grupo-mobile">Grupo C</h3>
                 <div class="separacao-mobile"></div>
                 <div class="informacoes-grupo-mobile">
                     <p>João Pedro Gomes Brigati</p>
@@ -292,9 +138,9 @@
                 </div>
             </div>
         </div>
-        <div class="conteudo-grupo-mobile">
+        <div class="conteudo-grupo-mobile  conteudo-grupo-mobile-todos-grupos">
             <div class="informacoes-mobile">
-                <h3 class="titulo-grupo-mobile">Participantes</h3>
+                <h3 class="titulo-grupo-mobile">Grupo D</h3>
                 <div class="separacao-mobile"></div>
                 <div class="informacoes-grupo-mobile">
                     <p>Erick Alves Carlos Pontes</p>
@@ -304,7 +150,7 @@
                     <p>Samuel Damasceno Cardoso</p>
                 </div>
                 <div class="separacao-mobile"></div>
-                <h3 class="titulo-grupo-mobile2">Palestra sobre Lógica de Programação</h3>
+                <h3 class="titulo-grupo-mobile2">Introdução à Lógica de Programação</h3>
                 <div class="informacoes-projeto-mobile">
                     <p>
 
@@ -312,9 +158,9 @@
                 </div>
             </div>
         </div>
-        <div class="conteudo-grupo-mobile">
+        <div class="conteudo-grupo-mobile  conteudo-grupo-mobile-todos-grupos">
             <div class="informacoes-mobile">
-                <h3 class="titulo-grupo-mobile">Participantes</h3>
+                <h3 class="titulo-grupo-mobile">Grupo E</h3>
                 <div class="separacao-mobile"></div>
                 <div class="informacoes-grupo-mobile">
                     <p>Letícia Alves De Oliveira</p>
@@ -325,16 +171,16 @@
                     <p>Eloisy Monique Moreira</p>               
                 </div>
                 <div class="separacao-mobile"></div>
-                <h3 class="titulo-grupo-mobile2">Instrodução ao Desenvolvimento Web</h3>
+                <h3 class="titulo-grupo-mobile2">Introdução ao Desenvolvimento Web</h3>
                 <div class="informacoes-projeto-mobile">
                     <p>
                     </p>
                 </div>
             </div>
         </div>
-        <div class="conteudo-grupo-mobile">
+        <div class="conteudo-grupo-mobile  conteudo-grupo-mobile-todos-grupos">
             <div class="informacoes-mobile">
-                <h3 class="titulo-grupo-mobile">Participantes</h3>
+                <h3 class="titulo-grupo-mobile">Grupo F</h3>
                 <div class="separacao-mobile"></div>
                 <div class="informacoes-grupo-mobile">
                     <p>Ravi Vendramini De Almeida</p>
@@ -361,7 +207,8 @@
 
 
     </main>
-    <footer>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#808080bd" fill-opacity="1" d="M0,96L20,112C40,128,80,160,120,160C160,160,200,128,240,122.7C280,117,320,139,360,149.3C400,160,440,160,480,165.3C520,171,560,181,600,170.7C640,160,680,128,720,122.7C760,117,800,139,840,128C880,117,920,75,960,48C1000,21,1040,11,1080,58.7C1120,107,1160,213,1200,213.3C1240,213,1280,107,1320,85.3C1360,64,1400,128,1420,160L1440,192L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg>   
+     <footer>
 
     </footer>
     <script src="assets/script/script.js"></script>
