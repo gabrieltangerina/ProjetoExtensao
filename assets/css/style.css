@@ -294,7 +294,6 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin: 0px 2vw;
     padding: 50px 10px 60px 10px;
 }
 
@@ -379,6 +378,12 @@ section {
     justify-content: space-around;
 }
 
+.texto-introducao {
+    padding-left: 10px;
+    padding-top: 40px;
+}
+
+
 .texto-introducao-grupo {
     padding-left: 10px;
 }
@@ -403,7 +408,6 @@ html {
 body {
     margin-bottom: 200px;
 }
-
 .footer{
     height: 5v;
     position:absolute;
@@ -450,9 +454,7 @@ footer a:focus {
     list-style-type: none
 }
 
-.informacoes-projeto-mobile p {
-    text-align: justify;
-}
+
 
 @media (max-width: 655px) {
     .conteudo {
@@ -588,15 +590,9 @@ footer a:focus {
         font-size: 1.3rem;
     }
 
-    .texto-introducao h3{
-        font-size: 1.3rem;
-        padding-top: 20px;
-    }
-
     .texto-introducao p {
         max-width: 50vw;
         font-size: 1.1rem;
-        text-align: justify;
     }
 
     #menu a {
@@ -611,11 +607,6 @@ footer a:focus {
         font-size: 1.1rem;
         font-weight: 400;
     }
-
-    .imagem-horizontal {
-        display: none;
-    }
-
 }
 
 @media (min-width: 656px) and (max-width: 1199px) {
@@ -725,12 +716,13 @@ footer a:focus {
         display: none;
     }
 
-    .texto-introducao-grupo {
-        padding-left: 5vw;
+    .imagem-introducao {
+        width: 20vw;
+        height: 30vh;
     }
 
-    .texto-introducao{
-        margin: auto 0;
+    .texto-introducao-grupo {
+        padding-left: 5vw;
     }
 
     .texto-introducao h3 {
@@ -740,7 +732,6 @@ footer a:focus {
     .texto-introducao p {
         padding-left: 3vw;
         width: 40vw;
-        text-align: justify;
     }
 
     .conteudo-header {
@@ -753,18 +744,6 @@ footer a:focus {
         width: 70vw;
         margin: 10vh auto;
     }
-
-    .imagem-vertical {
-        display: none; 
-    }
-
-    .imagem-horizontal {
-        width: 50vw;
-        height: 20vh;
-        margin: auto 0;
-        object-fit: cover;
-    }
-
 
 }
 
@@ -913,8 +892,11 @@ footer a:focus {
         box-shadow: 0px 4px 0px 0px var(--cor-hover);
     }
 
-    .texto-introducao{
-        margin: 10vh auto;
+    .imagem-introducao {
+        margin-top: 30px;
+        width: 16vw;
+        height: 50vh;
+        object-fit: cover;
     }
 
     .texto-introducao h3 {
@@ -925,7 +907,6 @@ footer a:focus {
         font-size: 1.5rem;
         max-width: 40vw;
         padding-left: 2rem;
-        text-align: justify;
     }
 
     .titulo-header {
@@ -940,17 +921,5 @@ footer a:focus {
         font-size: 1.2rem;
         font-weight: 500;
     }
-    
-    .imagem-vertical{
-        display: none;
-    }
-
-    .imagem-horizontal {
-        margin:auto;
-        width: 40vw;
-        height: 30vh;
-        object-fit: cover;
-    }
-
 
 }
