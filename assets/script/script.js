@@ -31,7 +31,6 @@ function tirarElementosDaPagina() {
         window.addEventListener('load', adicioanarUnderline());
     }
 
-
 }
 
 window.addEventListener('resize', tirarElementosDaPagina());
@@ -92,4 +91,3 @@ function adicioanarUnderline(){
         }
     })
 }
-
