@@ -28,8 +28,10 @@ function tirarElementosDaPagina() {
             seta.style.display = 'flex';
         })
 
+        redirecionarLinksGrupos();
         window.addEventListener('load', adicioanarUnderline());
     }
+
 
 }
 
@@ -89,5 +91,13 @@ function adicioanarUnderline(){
         if(e.innerHTML == tituloPagina.innerHTML){
             e.style.boxShadow = '0px 4px 0px 0px var(--cor-hover)';
         }
+    })
+}
+
+function redirecionarLinksGrupos(){
+    const itens = document.querySelectorAll('.item');
+
+    itens.forEach((item) => {
+        item.style.flexBasis = "260px"
     })
 }
