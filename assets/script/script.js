@@ -1,6 +1,7 @@
 // Tirando a seta no modo mobile
 function tirarElementosDaPagina() {
     const larguraDaJanela = window.innerWidth;
+    const tituloPagina = document.querySelector('.titulo-pagina'); 
 
     const tamanhoCelular = 655;
 
@@ -16,7 +17,17 @@ function tirarElementosDaPagina() {
             seta.style.display = 'none';
         })
 
-    } else {
+        if(tituloPagina.innerHTML != "Projeto de Extensão"){
+            menuHamburguer();
+        }
+
+    }else if(tituloPagina.innerHTML != "Projeto de Extensão" && larguraDaJanela < 1200){
+        menuHamburguer();
+    }
+    else if(tituloPagina.innerHTML == "Projeto de Extensão"){
+        linksGrupos();
+    }
+    else {
         const setasNext = document.querySelectorAll(".swiper-button-next");
         const setasPrev = document.querySelectorAll(".swiper-button-prev");
 
@@ -51,14 +62,17 @@ window.addEventListener('load', tirarMenu());
 
 
 // ------------ Menu Hamburguer ----------------
-const btnMobile = document.getElementById('btn-mobile');
+function menuHamburguer(){
+    const btnMobile = document.querySelector('#btn-mobile');
+    
+    function toggleMenu() {
+        const nav = document.getElementById('nav');
+        nav.classList.toggle('active');
+    }
 
-function toggleMenu() {
-    const nav = document.getElementById('nav');
-    nav.classList.toggle('active');
+    btnMobile.addEventListener('click', toggleMenu);
 }
 
-btnMobile.addEventListener('click', toggleMenu);
 
 // ------------------ IntersectionObserver ------------------
 const conteudos = document.querySelectorAll(".hidden");
@@ -91,3 +105,12 @@ function adicioanarUnderline(){
         }
     })
 }
+
+function linksGrupos(){
+    const itens = document.querySelectorAll(".item");
+
+    itens.forEach((item) => {
+        item.style.flexBasis = '250px';
+    })
+}
+
