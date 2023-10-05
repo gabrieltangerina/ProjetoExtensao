@@ -453,6 +453,10 @@ footer a:focus {
     height: 50vh;
 }
 
+.col-md-5{
+    display: flex;
+}
+
 
 @media (max-width: 655px) {
     .conteudo {
