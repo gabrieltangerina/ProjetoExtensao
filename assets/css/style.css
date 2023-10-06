@@ -630,6 +630,10 @@ footer a:focus {
         width: 45vw;
         height: 25vh;
     }
+
+    #menu li:hover{
+        background-color: #9393933d;
+    }
 }
 
 @media (min-width: 656px) and (max-width: 1199px) {
