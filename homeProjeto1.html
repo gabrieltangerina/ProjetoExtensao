@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Extensão</title>
+    <script src="https://use.fontawesome.com/8edf9be74d.js"></script>
+    <link rel="shortcut icon" href="assets/imagens/faviconIFSP.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500&family=Open+Sans:wght@300;400;500&family=Roboto:wght@100;300;400;500&display=swap"rel="stylesheet">
+
+    <!-- PARA USAR O ZOOM NA IMAGEM -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <!-- PARA USAR O CARROSEL  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="introducao-site">
+        <div class="div-cabecalho">
+            <header id="header">
+                <a href="index.html" id="link-logo">
+                    <img src="assets/imagens/IFSP-VTP-Logo-Color-2 (IF-Apenas).png" alt="Logo IFSP" srcset=""
+                        id="imagem-logo">
+                </a>
+                <h2 class="titulo-header titulo-pagina">Projeto de Extensão</h2>
+                <nav id="nav">
+                    <!-- <button id="btn-mobile">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </button> -->
+                    <ul id="menu">
+                        <li><a href="GrupoA.html">Grupo A</a></li>
+                        <li><a href="GrupoB.html">Grupo B</a></li>
+                        <li><a href="GrupoC.html">Grupo C</a></li>
+                        <li><a href="GrupoD.html">Grupo D</a></li>
+                        <li><a href="GrupoE.html">Grupo E</a></li>
+                        <li><a href="GrupoF.html">Grupo F</a></li>
+                        <li id="todosGrupos"><a href="TodosGrupos.html">Todos os grupos</a></li>
+                    </ul>
+                </nav>
+        </div>
+        <div class="div-introducao">
+            <div class="texto-introducao">
+                <h3>Sobre o Projeto</h3>
+                <p>
+                    O projeto busca oferecer à comunidade conteúdos de aprendizado gratuito e de qualidade
+                    ao mesmo tempo que instiga os alunos da graduação à melhorarem suas técnicas de aprendizado
+                    e ensino.
+                </p>
+            </div>
+            <img src="assets/imagens/LogoVertical.png" alt="" srcset="" class="imagem-vertical">
+            <img src="assets/imagens/LogoGrande.png" alt="" srcset="" class="imagem-horizontal">
+        </div>
+        </header>
+        <nav>
+            <div class="container">
+                <a href="GrupoA.html" class="item">
+                    <div class="grupoA">
+                        <div class="parte1">
+                            <h3 class="titulo-lista-grupos">Grupo A</h3>
+                            <p class="texto-lista">Palestras Lógicas para Jogos.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="GrupoB.html" class="item">
+                    <div class="grupoB">
+                        <h3 class="titulo-lista-grupos">Grupo B</h3>
+                        <p class="texto-lista">Mini-curso de Introdução a Informática.</p>
+                    </div>
+                </a>
+                <a href="GrupoC.html" class="item">
+                    <div class="grupoC">
+                        <h3 class="titulo-lista-grupos">Grupo C</h3>
+                        <p class="texto-lista">Oficinas de Introdução a Plataformas Virtuais.</p>
+                    </div>
+                </a>
+                <a href="GrupoD.html" class="item">
+                    <div class="grupoD">
+                        <h3 class="titulo-lista-grupos">Grupo D</h3>
+                        <p class="texto-lista">Introdução à Lógica de Programação.</p>
+                    </div>
+                </a>
+                <a href="GrupoE.html" class="item">
+                    <div class="grupoE">
+                        <h3 class="titulo-lista-grupos">Grupo E</h3>
+                        <p class="texto-lista">Introdução ao Desenvolvimento Web.</p>
+                    </div>
+                </a>
+                <a href="GrupoF.html" class="item">
+                    <div class="grupoF">
+                        <h3 class="titulo-lista-grupos">Grupo F</h3>
+                        <p class="texto-lista">Curso Online de Introdução a Linguagem de Programação OCaml.</p>
+                    </div>
+                </a>
+                <a href="TodosGrupos.html" class="item">
+                    <div class="todosGrupos">
+                        <h3 class="titulo-lista-grupos">Todos os Grupos</h3>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#e2e8f08c" fill-opacity="1" 
+            d="M0,128L48,138.7C96,149,192,171,288,181.3C384,192,480,192,576,181.3C672,171,768,149,864,154.7C960,160,1056,192,1152,192C1248,192,1344,160,1392,144L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+        </path>
+    </svg>
+    <div class="div-postagens-recentes">
+        <h3 class="titulo-postagens-recentes">Postagens recentes</h3>
+    </div>
+    <main>
+        <section class="hidden">
+            <div class="conteudo">
+                <div class="topo-conteudo">
+                    <p class="nome-grupo">
+                        <a href="GrupoE.html" class="link-grupo">Grupo E</a>
+                    </p>
+                    <p class="assunto">
+                        Introdução ao Desenvolvimento Web
+                    </p>
+                    <p class="tempoPostagem tempoDecorrido1">
+                        <!-- TEMPO DESDE A POSTAGEM DO POST -->
+                    </p>
+                </div>
+                <div class="conteudo-slider">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" style="height: auto;">
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoE/Atualizacoes/WhatsApp Image 2023-11-04 at 18.48.23.jpeg"><img src="assets/imagens/GrupoE/Atualizacoes/WhatsApp Image 2023-11-04 at 18.48.23.jpeg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoE/Atualizacoes/WhatsApp Image 2023-11-04 at 18.48.41 (1).jpeg"><img src="assets/imagens/GrupoE/Atualizacoes/WhatsApp Image 2023-11-04 at 18.48.41 (1).jpeg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoE/Atualizacoes/WhatsApp Image 2023-11-04 at 18.48.41 (2).jpeg"><img src="assets/imagens/GrupoE/Atualizacoes/WhatsApp Image 2023-11-04 at 18.48.41 (2).jpeg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoE/Atualizacoes/WhatsApp Image 2023-11-04 at 18.48.41.jpeg"><img src="assets/imagens/GrupoE/Atualizacoes/WhatsApp Image 2023-11-04 at 18.48.41.jpeg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoE/Atualizacoes/WhatsApp Image 2023-11-04 at 18.48.42 (1).jpeg"><img src="assets/imagens/GrupoE/Atualizacoes/WhatsApp Image 2023-11-04 at 18.48.42 (1).jpeg"></a>                            
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="conteudo-texto">
+                    <p class="texto-conteudo">
+                        Nos dias <strong>04/10</strong>, <strong>11/10</strong>, <strong>25/10</strong> e <strong>01/11</strong> , foi oferecido no Instituto Federal de Votuporanga um minicurso de Introdução ao Desenvolvimento Web para os adolescentes dos 8°Anos da escola estadual EE Enny Tereza Longo Fracaro Profª. Para cada uma das turmas foi separado dois dias de aula com 2 horas cada, resultando em 4 horas totais de aprendizado para cada sala. A partir dessas aulas os alunos foram imersos em conceitos iniciais de HTML e CSS, de forma que pudessem associar teoria e prática e, assim, desenvolverem suas primeiras páginas web, além de tornarem-se capacitados a compreender e aplicar os princípios de estruturação e estilização de páginas.                    
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="conteudo">
+                <div class="topo-conteudo">
+                    <p class="nome-grupo">
+                        <a href="GrupoA.html" class="link-grupo">Grupo A</a>
+                    </p>
+                    <p class="assunto">
+                        Palestra Lógica para Jogos
+                    </p>
+                    <p class="tempoPostagem tempoDecorrido1">
+                        <!-- TEMPO DESDE A POSTAGEM DO POST -->
+                    </p>
+                </div>
+                <div class="conteudo-slider">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" style="height: auto;">
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoA/FotosAtualizacao/WhatsApp Image 2023-11-03 at 16.59.52 (1).jpeg"><img src="assets/imagens/GrupoA/FotosAtualizacao/WhatsApp Image 2023-11-03 at 16.59.52 (1).jpeg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoA/FotosAtualizacao/WhatsApp Image 2023-11-03 at 16.59.52 (3).jpeg"><img src="assets/imagens/GrupoA/FotosAtualizacao/WhatsApp Image 2023-11-03 at 16.59.52 (3).jpeg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoA/FotosAtualizacao/WhatsApp Image 2023-11-03 at 16.59.52.jpeg"><img src="assets/imagens/GrupoA/FotosAtualizacao/WhatsApp Image 2023-11-03 at 16.59.52.jpeg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoA/FotosAtualizacao/WhatsApp Image 2023-11-03 at 16.59.53.jpeg"><img src="assets/imagens/GrupoA/FotosAtualizacao/WhatsApp Image 2023-11-03 at 16.59.53.jpeg"></a>                            
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="conteudo-texto">
+                    <p class="texto-conteudo">
+                        No dia <strong>01/11</strong> os alunos do IFSP se juntaram para dar palestras sobre Programação e Jogos para os alunos da CEM Profª Maria Martins e Lourenço, uma para os alunos de manhã e outra para os alunos de tarde, falando sobre como é o mundo da programação, todas as coisas que são possíveis com ela e também, realizamos oficinas com a linguagem de programação Scratch, ensinando como utilizar a plataforma e como fazer um jogo divertido!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="conteudo">
+                <div class="topo-conteudo">
+                    <p class="nome-grupo">
+                        <a href="GrupoD.html" class="link-grupo">Grupo D</a>
+                    </p>
+                    <p class="assunto">
+                        Introdução à Lógica de Programação
+                    </p>
+                    <p class="tempoPostagem tempoDecorrido1">
+                        <!-- TEMPO DESDE A POSTAGEM DO POST -->
+                    </p>
+                </div>
+                <div class="conteudo-slider">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" style="height: auto;">
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoD/Foto3Dia2.jpg"><img src="assets/imagens/GrupoD/Foto3Dia2.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoD/Foto4Dia2.jpg"><img src="assets/imagens/GrupoD/Foto4Dia2.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoD/Foto2Dia2.jpg"><img src="assets/imagens/GrupoD/Foto2Dia2.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoD/Foto1Dia2.jpg"><img src="assets/imagens/GrupoD/Foto1Dia2.jpg"></a>                            
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="conteudo-texto">
+                    <p class="texto-conteudo">
+                        No dia <strong>09/10</strong> apresentamos aos alunos estruturas de condições utilizando as instruções produzidas por eles (se, se/senão, escolha). Para enfatizar o ensino utilizamos de vários exercícios para um melhor aprendizado auxiliando os alunos de mesa em mesa até a finalização da aula.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="conteudo">
+                <div class="topo-conteudo">
+                    <p class="nome-grupo">
+                        <a href="GrupoE.html" class="link-grupo">Grupo E</a>
+                    </p>
+                    <p class="assunto">
+                        Introdução ao Desenvolvimento Web
+                    </p>
+                    <p class="tempoPostagem tempoDecorrido1">
+                        <!-- TEMPO DESDE A POSTAGEM DO POST -->
+                    </p>
+                </div>
+                <div class="conteudo-slider">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" style="height: auto;">
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoE/35321faf-9c8a-480e-9304-f302524f1907.jpg"><img src="assets/imagens/GrupoE/35321faf-9c8a-480e-9304-f302524f1907.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoE/471825e5-115b-4796-a592-767f8f672675.jpg"><img src="assets/imagens/GrupoE/471825e5-115b-4796-a592-767f8f672675.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoE/53b9ff17-772e-41fa-ac44-52f2664991c1.jpg"><img src="assets/imagens/GrupoE/53b9ff17-772e-41fa-ac44-52f2664991c1.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoE/5d3540d0-83cc-4c54-9950-7fd851d790be.jpg"><img src="assets/imagens/GrupoE/5d3540d0-83cc-4c54-9950-7fd851d790be.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoE/b748fc9b-4f1f-4974-ac74-23869a3f7e98.jpg"><img src="assets/imagens/GrupoE/b748fc9b-4f1f-4974-ac74-23869a3f7e98.jpg"></a>                            
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="conteudo-texto">
+                    <p class="texto-conteudo">
+                        No dia <strong>04/10</strong>, o grupo deu a primeira aula do minicurso de HTML/CSS para a turma do 8° ano da E.E. Enny Tereza Longo Facaro, abordando as principais tags HTML utilizadas na criação de uma página web e praticando exercícios juntamente com os alunos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="conteudo">
+                <div class="topo-conteudo">
+                    <p class="nome-grupo">
+                        <a href="GrupoD.html" class="link-grupo">Grupo D</a>
+                    </p>
+                    <p class="assunto">
+                        Introdução à Lógica de Programação
+                    </p>
+                    <p class="tempoPostagem tempoDecorrido1">
+                        <!-- TEMPO DESDE A POSTAGEM DO POST -->
+                    </p>
+                </div>
+                <div class="conteudo-slider">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" style="height: auto;">
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoD/IMG-20230918-WA0005.jpg"><img src="assets/imagens/GrupoD/IMG-20230918-WA0005.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoD/IMG-20231003-WA0001.jpg"><img src="assets/imagens/GrupoD/IMG-20231003-WA0001.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoD/IMG-20231003-WA0003.jpg"><img src="assets/imagens/GrupoD/IMG-20231003-WA0003.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoD/IMG-20230918-WA0004.jpg"><img src="assets/imagens/GrupoD/IMG-20230918-WA0004.jpg"></a>                            
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="conteudo-texto">
+                    <p class="texto-conteudo">
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="conteudo">
+                <div class="topo-conteudo">
+                    <p class="nome-grupo">
+                        <a href="GrupoA.html" class="link-grupo">Grupo A</a>
+                    </p>
+                    <p class="assunto">
+                        Palestra sobre Tecnologia e Programação
+                    </p>
+                    <p class="tempoPostagem tempoDecorrido1">
+                        <!-- TEMPO DESDE A POSTAGEM DO POST -->
+                    </p>
+                </div>
+                <div class="conteudo-slider">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" style="height: auto;">
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoA/Foto (1).jpeg"><img src="assets/imagens/GrupoA/Foto (1).jpeg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoA/Foto (2).jpeg"><img src="assets/imagens/GrupoA/Foto (2).jpeg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoA/Foto (3).jpeg"><img src="assets/imagens/GrupoA/Foto (3).jpeg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoA/Foto (4).jpeg"><img src="assets/imagens/GrupoA/Foto (4).jpeg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoA/Foto (7).jpeg"><img src="assets/imagens/GrupoA/Foto (7).jpeg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoA/Foto (8).jpeg"><img src="assets/imagens/GrupoA/Foto (8).jpeg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoA/Foto (9).jpeg"><img src="assets/imagens/GrupoA/Foto (9).jpeg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoA/Foto (12).jpeg"><img src="assets/imagens/GrupoA/Foto (12).jpeg"></a>                            
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="conteudo-texto">
+                    <p class="texto-conteudo">
+                        No dia <strong>27/03</strong>, o grupo A deu uma palestra sobre Tecnologia e Programação para o
+                        3º ano da escola Enny e também uma oficina com o jogo/linguagem Scratch, mostrando por meio de
+                        exercícios o básico da programação. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="conteudo">
+                <div class="topo-conteudo">
+                    <p class="nome-grupo">
+                        <a href="GrupoF.html" class="link-grupo">Grupo F</a>
+                    </p>
+                    <p class="assunto">
+                        Curso sobre OCaml - Aula 1
+                    </p>
+                    <p class="tempoPostagem tempoDecorrido1">
+                        <!-- TEMPO DESDE A POSTAGEM DO POST -->
+                    </p>
+                </div>
+                <div class="conteudo-slider">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VkU6Ml1Hi4A?si=3a5CFHG29n5XwrYt"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="conteudo-texto">
+                    <p class="texto-conteudo">
+                        - Documentação da Instalação do ambiente de desenvolvimento OCaml: <a
+                            href="https://ocaml.org/install" target="_blank" class="links">https://ocaml.org/install</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="conteudo">
+                <div class="topo-conteudo">
+                    <p class="nome-grupo">
+                        <a href="GrupoB.html" class="link-grupo">Grupo B</a>
+                    </p>
+                    <p class="assunto">
+                        Mini-curso de Introdução a Informática
+                    </p>
+                    <p class="tempoPostagem tempoDecorrido2">
+                        <!-- TEMPO DESDE A POSTAGEM DO POST -->
+                    </p>
+                </div>
+                <div class="conteudo-slider">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" style="height: auto;">
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoB/PXL_20230918_084021111.PORTRAIT.jpg"><img src="assets/imagens/GrupoB/PXL_20230918_084021111.PORTRAIT.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoB/IMG-20230918-WA0010.jpg"><img src="assets/imagens/GrupoB/IMG-20230918-WA0010.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoB/IMG-20230918-WA0019.jpg"><img src="assets/imagens/GrupoB/IMG-20230918-WA0019.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoB/IMG-20230918-WA0029.jpg"><img src="assets/imagens/GrupoB/IMG-20230918-WA0029.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoB/IMG-20230918-WA0033.jpg"><img src="assets/imagens/GrupoB/IMG-20230918-WA0033.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoB/IMG-20230918-WA0034.jpg"><img src="assets/imagens/GrupoB/IMG-20230918-WA0034.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoB/IMG-20230918-WA0038.jpg"><img src="assets/imagens/GrupoB/IMG-20230918-WA0038.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoB/IMG-20230918-WA0041.jpg"><img src="assets/imagens/GrupoB/IMG-20230918-WA0041.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoB/IMG-20230918-WA0044.jpg"><img src="assets/imagens/GrupoB/IMG-20230918-WA0044.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoB/IMG-20230918-WA0047.jpg"><img src="assets/imagens/GrupoB/IMG-20230918-WA0047.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoB/IMG-20230918-WA0050.jpg"><img src="assets/imagens/GrupoB/IMG-20230918-WA0050.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoB/PXL_20230918_092226627.PORTRAIT.jpg"><img src="assets/imagens/GrupoB/PXL_20230918_092226627.PORTRAIT.jpg"></a>                            
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="conteudo-texto">
+                    <p class="texto-conteudo">
+                        No dia <strong>18/09</strong>, foi dado início à prática do projeto de introdução a informática.
+                        Foram recebidos no Campus do Instituto os alunos da escola Cem Profª. Maria Martins e Lourenço,
+                        localizada no bairro Pozzobon. Foi feito um breve passeio com eles pelos blocos do Campus e
+                        assim iniciamos a aplicação das aulas no laboratório de informática.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="conteudo">
+                <div class="topo-conteudo">
+                    <p class="nome-grupo">
+                        <a href="GrupoC.html" class="link-grupo">Grupo C</a>
+                    </p>
+                    <p class="assunto">
+                        Visita ao Lar Frei Arnaldo
+                    </p>
+                    <p class="tempoPostagem tempoDecorrido1">
+                        <!-- TEMPO DESDE A POSTAGEM DO POST -->
+                    </p>
+                </div>
+                <div class="conteudo-slider">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" style="height: auto;">
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoC/IMG-20230901-WA0063.jpg"><img src="assets/imagens/GrupoC/IMG-20230901-WA0063.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoC/IMG-20230901-WA0064.jpg"><img src="assets/imagens/GrupoC/IMG-20230901-WA0064.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoC/IMG-20230901-WA0065.jpg"><img src="assets/imagens/GrupoC/IMG-20230901-WA0065.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoC/IMG-20230901-WA0066.jpg"><img src="assets/imagens/GrupoC/IMG-20230901-WA0066.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoC/IMG-20230901-WA0069.jpg"><img src="assets/imagens/GrupoC/IMG-20230901-WA0069.jpg"></a>                            
+                            </div>
+                            <div class="swiper-slide">
+                                <a data-fancybox="gallery" href="assets/imagens/GrupoC/IMG-20230901-WA0072.jpg"><img src="assets/imagens/GrupoC/IMG-20230901-WA0072.jpg"></a>                            
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="conteudo-texto">
+                    <p class="texto-conteudo">
+                        No dia <strong>23/08</strong>, foram ministradas aulas de inglês básico e introdução ao
+                        PowerPoint. Durante as aulas, foi abordada a conversação em língua inglesa e as ferramentas
+                        disponíveis na página inicial do software. As aulas foram realizadas no Lar Frei Arnaldo, com os
+                        integrantes do clube de robótica local como alunos.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h5 ><i class="fa-solid fa-thumbtack"></i> IFSP-VTP </h5>
+                    <ul class="nav">
+                        <!-- <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-github fa-lg"></i></a></li> 
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li> -->
+                    </ul>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </footer>    
+
+    <script src="assets/script/script.js"></script>
+    
+    <!-- PARA USAR O CARROSEL  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <!-- PARA USAR O ZOOM NA IMAGEM-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+</body>
+
+</html>

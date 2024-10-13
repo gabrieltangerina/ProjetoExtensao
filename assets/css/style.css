@@ -4,20 +4,20 @@
 
 /* Estilo Projeto II */
 
-.container-main{
+.container-main {
     border: 1px solid lightgray;
-    padding: 0; 
+    padding: 0;
 }
 
-.sub-titulo{
+.sub-titulo {
     text-align: center;
 }
 
-.divisor{
+.divisor {
     width: 80vw;
     margin: 0 auto;
 }
-  
+
 /* Estilo Projeto I */
 
 img {
@@ -138,7 +138,9 @@ h2 {
     padding: 5px;
     margin-left: 5px;
     transition: box-shadow 0.3s;
-}   
+    text-decoration: none;
+    color: black;
+}
 
 .link-grupo:hover {
     box-shadow: 0px 2px 0px 0px var(--cor-hover);
@@ -362,7 +364,7 @@ section {
     --cor-hover: #379936;
 }
 
-.div-cabecalho{
+.div-cabecalho {
     /* background-color: var(--cor-cinza) !important; */
 }
 
@@ -417,13 +419,15 @@ html {
 body {
     margin-bottom: 200px;
 }
-.footer{
+
+.footer {
     height: 5v;
-    position:absolute;
+    position: absolute;
     bottom: 0px;
 }
 
-.container, .row{
+.container,
+.row {
     padding: 0;
 }
 
@@ -463,15 +467,16 @@ footer a:focus {
     list-style-type: none
 }
 
-.texto-introducao > p, .informacoes-projeto-mobile > p{
+.texto-introducao>p,
+.informacoes-projeto-mobile>p {
     text-align: justify;
 }
 
-.div-introducao{
+.div-introducao {
     height: 50vh;
 }
 
-.col-md-5{
+.col-md-5 {
     display: flex;
 }
 
@@ -605,7 +610,7 @@ footer a:focus {
         align-items: center;
     }
 
-    .texto-introducao{
+    .texto-introducao {
         margin: auto 0;
     }
 
@@ -614,7 +619,7 @@ footer a:focus {
         font-size: 1.3rem;
     }
 
-    .texto-introducao h3{
+    .texto-introducao h3 {
         font-size: 1.45rem;
         /* padding-left: 10px; */
         text-align: center;
@@ -639,7 +644,7 @@ footer a:focus {
         font-weight: 400;
     }
 
-    .imagem-horizontal{
+    .imagem-horizontal {
         display: none;
     }
 
@@ -649,7 +654,7 @@ footer a:focus {
         height: 25vh;
     }
 
-    #menu li:hover{
+    #menu li:hover {
         background-color: #9393933d;
     }
 }
@@ -761,15 +766,15 @@ footer a:focus {
         display: none;
     }
 
-    
+
     .texto-introducao-grupo {
         padding-left: 5vw;
     }
-    
+
     .texto-introducao h3 {
         font-size: 1.8rem;
     }
-    
+
     .texto-introducao p {
         padding-left: 3vw;
         width: 40vw;
@@ -780,13 +785,13 @@ footer a:focus {
         width: 90vw;
         justify-content: space-around;
     }
-    
+
     .conteudo-grupo-mobile {
         width: 70vw;
         margin: 10vh auto;
     }
-    
-    .texto-introducao{
+
+    .texto-introducao {
         margin: auto 0;
     }
 
@@ -794,7 +799,7 @@ footer a:focus {
         display: none;
     }
 
-    .imagem-horizontal{
+    .imagem-horizontal {
         width: 50vw;
         height: 30vh;
         margin: auto 0;
@@ -804,7 +809,7 @@ footer a:focus {
         border-bottom: 2px solid rgba(0, 0, 0, 0.2);
     }
 
-    #menu li:hover{
+    #menu li:hover {
         background-color: #9393933d;
     }
 
@@ -982,7 +987,7 @@ footer a:focus {
         font-weight: 500;
     }
 
-    .imagem-horizontal{
+    .imagem-horizontal {
         margin: auto 0;
         width: 40vw;
         height: 25vh;
