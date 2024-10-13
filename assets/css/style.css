@@ -2,6 +2,16 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* Estilo Projeto II */
+
+.container-main{
+    border: 1px solid lightgray;
+    padding: 0; 
+}
+
+  
+/* Estilo Projeto I */
+
 img {
     width: 100%;
 }
