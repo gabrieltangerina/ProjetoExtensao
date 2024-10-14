@@ -22,56 +22,24 @@
   <!-- PARA USAR O CARROSEL  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
+  <!-- Reaproveitando Nav -->
+  <script>
+    function loadHTML(selector, url) {
+      fetch(url)
+        .then(response => response.text())
+        .then(data => {
+          document.querySelector(selector).innerHTML = data;
+        })
+        .catch(error => console.log("Erro ao carregar arquivo:", error));
+    }
+  </script>
+
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid d-flex">
-      <a class="navbar-brand" href="index.html">Projeto Extensão II</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Início</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Grupos
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="GrupoRedes.html">Minicurso de Redes de Computadores</a></li>
-              <li><a class="dropdown-item" href="GrupoGameMaker.html">Curso de Gamemaker - Aprender a programar
-                  jogos</a></li>
-              <li>
-              <li><a class="dropdown-item" href="GrupoPortifolioWEB.html">Desenvolvimento de um portifólio WEB</a></li>
-              <li><a class="dropdown-item" href="GrupoHtmlCss.html">Aulas sobre HTML e CSS</a></li>
-              <li><a class="dropdown-item" href="GrupoJava.html">Curso de Java</a></li>
-              <li><a class="dropdown-item" href="GrupoSeguranca.html">Palestras sobre segurança digital</a></li>
-              <hr class="dropdown-divider">
-          </li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sobre</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Todos os Grupos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="homeProjeto1.html">Projeto Extensão I</a>
-        </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-
+  <!-- Reaproveitando Nav -->
+  <div id="nav"></div>
 
   <div class="container my-5">
     <h2>Últimas Postagens</h2>
@@ -128,7 +96,7 @@
   <h2 class="sub-titulo">Postagens</h2>
   <hr class="divisor">
 
-  <section class="hidden">
+  <div class="content-post">
     <div class="conteudo">
       <div class="topo-conteudo">
         <p class="nome-grupo">
@@ -189,8 +157,7 @@
           exercícios o básico da programação. </p>
       </div>
     </div>
-  </section>
-
+  </div>
 
   <hr class="divisor">
 
@@ -203,7 +170,8 @@
           <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagem do Card 1">
           <div class="card-body">
             <h5 class="card-title">Minicurso de Redes de Computadores</h5>
-            <p class="card-text">Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <p class="card-text">O minicurso de Redes de Computadores será ofertado para pessoas com mais de 15 anos que
+              possuam conhecimentos básicos de informática. Não são necessários conhecimentos prévios de redes.</p>
           </div>
         </div>
       </div>
@@ -213,7 +181,8 @@
           <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagem do Card 2">
           <div class="card-body">
             <h5 class="card-title">Curso de Gamemaker - Aprender a programar jogos</h5>
-            <p class="card-text">Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <p class="card-text">O curso terá como público-alvo adolescentes do 9º ano do ensino fundamental até o 3º
+              ano do ensino médio, com idades entre 14 e 18 anos. Não é necessário possuir conhecimentos prévios.</p>
           </div>
         </div>
       </div>
@@ -223,7 +192,9 @@
           <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagem do Card 3">
           <div class="card-body">
             <h5 class="card-title">Desenvolvimento de um portifólio WEB</h5>
-            <p class="card-text">Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <p class="card-text">O minicurso tem como objetivo introduzir conhecimentos básicos sobre a linguagem de
+              marcação HTML e estilização CSS. Voltado para adolescentes de 14 a 15 anos, sem necessidade de
+              conhecimentos prévios, o curso focará na construção de um portfólio web utilizando essas tecnologias.</p>
           </div>
         </div>
       </div>
@@ -233,14 +204,16 @@
           <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagem do Card 4">
           <div class="card-body">
             <h5 class="card-title">Aulas sobre HTML e CSS</h5>
-            <p class="card-text">Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <p class="card-text">Em parceria com a Secretaria Estadual de Educação, serão ofertados dois cursos. O
+              primeiro visa capacitar 50 professores da rede estadual de Votuporanga e região. O segundo atenderá
+              diretamente aos alunos do ensino médio.</p>
           </div>
         </div>
       </div>
       <!-- Cartão 5 -->
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100 text-center">
-          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagem do Card 5">
+          <img src="./images/GrupoJava/PerfilGrupoJava.jpg" class="card-img-top" alt="Imagem do Card 5">
           <div class="card-body">
             <h5 class="card-title">Curso de Java</h5>
             <p class="card-text">Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
@@ -253,13 +226,20 @@
           <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagem do Card 6">
           <div class="card-body">
             <h5 class="card-title">Palestras sobre Segurança Digital</h5>
-            <p class="card-text">Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <p class="card-text">As palestras buscam promover a conscientização e educação sobre segurança digital para
+              diferentes faixas etárias na comunidade. O projeto se divide em três palestras distintas: para crianças,
+              adolescentes e pais/professores. O objetivo de cada palestra é abordar tópicos relevantes à faixa etária
+              específica de forma clara e envolvente.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Reaproveitando Nav -->
+  <script>
+    loadHTML("#nav", "components/nav.html");
+  </script>
 
   <script src="assets/script/script.js"></script>
 

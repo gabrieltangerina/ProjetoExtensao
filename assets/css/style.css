@@ -18,6 +18,21 @@
     margin: 0 auto;
 }
 
+.btn-visit-event {
+    margin: 8px;
+}
+
+.content-post {
+    display: flex;
+    justify-content: center;
+}
+
+.no-results-message {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 /* Estilo Projeto I */
 
 img {
