@@ -4,6 +4,10 @@
 
 /* Estilo Projeto II */
 
+.container-nav>nav {
+    width: 100%;
+}
+
 .scrollable-row {
     display: flex;
     overflow-x: auto;
