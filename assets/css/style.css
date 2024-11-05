@@ -4,6 +4,32 @@
 
 /* Estilo Projeto II */
 
+.container-nav>nav {
+    width: 100%;
+}
+
+.scrollable-row {
+    display: flex;
+    overflow-x: auto;
+    /* Habilita a rolagem horizontal */
+    gap: 1rem;
+    /* Espaço entre os cartões */
+    padding: 1rem;
+    /* Espaçamento interno */
+}
+
+.scrollable-row .card {
+    min-width: 300px;
+    /* Largura mínima para cada cartão */
+    flex-shrink: 0;
+    /* Impede que os cartões encolham */
+}
+
+
+.card-text {
+    text-align: left !important;
+}
+
 .container-main {
     border: 1px solid lightgray;
     padding: 0;
@@ -33,13 +59,13 @@
     margin-bottom: 40px;
 }
 
-.title-events{
+.title-events {
     margin: 2% 0 0 2%;
     font-size: 20px;
     font-weight: bold;
 }
 
-.divisor-events{
+.divisor-events {
     width: 80%;
     margin-left: 1%;
 }
@@ -48,15 +74,15 @@
     padding-left: 0;
     padding-right: 0;
     margin: 0 !important;
-    width: 100vw; 
-  }
-
-.row.flex-nowrap {
-margin-left: 0;
-margin-right: 0;
+    width: 100vw;
 }
 
-.no-results-message-events{
+.row.flex-nowrap {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.no-results-message-events {
     font-size: 18px;
     display: flex;
     justify-content: center;
