@@ -4,6 +4,17 @@
 
 /* Estilo Projeto II */
 
+.link-instagram {
+    cursor: pointer;
+    color: #292c2f;
+}
+
+#icon-image {
+    width: 20px;
+    height: 20px;
+    margin: 8px;
+}
+
 .container-nav>nav {
     width: 100%;
 }
